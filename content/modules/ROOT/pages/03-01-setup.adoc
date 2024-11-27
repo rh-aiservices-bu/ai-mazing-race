@@ -1,6 +1,23 @@
 = Setup
 include::_attributes.adoc[]
 
+_PLACEHOLDER_
 
+== Cluster setup
 
+* `oc apply -f http://...../03.yaml`
+** adds a bunch of workbench sizes
+** adds a bunch of container images
+* confirm the changes have taken
+** `oc get IST`
+** `oc get ... -oyaml | jq`
 
+== Scenario description
+
+* The spanish government wants every person in Spain to use RHOAI
+** That's a lot of people
+* They have given us some code that each spanish citizen will have to run in a workbench
+* They want to know
+** which is the best workbench image to use
+** what is the smallest size they could get away with
+* Good luck

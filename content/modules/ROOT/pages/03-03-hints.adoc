@@ -1,5 +1,16 @@
 = Hints
 include::_attributes.adoc[]
 
+== Hint #1
 
+.Click to reveal Hint #1
+[%collapsible]
+====
+Think about the problem a bit harder
+====
+
+== Hint #2
+
+
+== Hint #3
 
