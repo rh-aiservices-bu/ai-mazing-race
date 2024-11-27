@@ -14,7 +14,43 @@
 // ** xref:02-04-first-jupyter-notebook.adoc[2.4 Your first Jupyter Notebook]
 // ** xref:02-05-validating-env.adoc[2.5 Validating the environment]
 
-// * 3. Working with an LLM
+* 3. Scenario "Spain"
+** xref:01-01-starting-point.adoc[3.1 Setup]
+** xref:01-01-starting-point.adoc[3.2 Execution]
+** xref:01-01-starting-point.adoc[3.2 Hints]
+** xref:01-01-starting-point.adoc[3.2 Survey]
+
+* 4. Scenario "France"
+** xref:01-01-starting-point.adoc[4.1 Setup]
+** xref:01-01-starting-point.adoc[4.2 Execution]
+** xref:01-01-starting-point.adoc[4.2 Hints]
+** xref:01-01-starting-point.adoc[4.2 Survey]
+
+* 5. Scenario "Turkiye"
+** xref:01-01-starting-point.adoc[5.1 Setup]
+** xref:01-01-starting-point.adoc[5.2 Execution]
+** xref:01-01-starting-point.adoc[5.2 Hints]
+** xref:01-01-starting-point.adoc[5.2 Survey]
+
+* 6. Scenario "USA"
+** xref:01-01-starting-point.adoc[6.1 Setup]
+** xref:01-01-starting-point.adoc[6.2 Execution]
+** xref:01-01-starting-point.adoc[6.2 Hints]
+** xref:01-01-starting-point.adoc[6.2 Survey]
+
+* 7. Scenario "Canada"
+** xref:01-01-starting-point.adoc[7.1 Setup]
+** xref:01-01-starting-point.adoc[7.2 Execution]
+** xref:01-01-starting-point.adoc[7.2 Hints]
+** xref:01-01-starting-point.adoc[7.2 Survey]
+
+* 8. Scenario "Sweden"
+** xref:01-01-starting-point.adoc[8.1 Setup]
+** xref:01-01-starting-point.adoc[8.2 Execution]
+** xref:01-01-starting-point.adoc[8.2 Hints]
+** xref:01-01-starting-point.adoc[8.2 Survey]
+
+
 // ** xref:03-01-notebook-based-llm.adoc[3.1 Notebook-Based LLM Example]
 // ** xref:03-02-summarization.adoc[3.2 Text Summarization]
 // ** xref:03-03-information-extractions.adoc[3.3 Information Extraction]
