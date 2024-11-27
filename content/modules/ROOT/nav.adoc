@@ -15,40 +15,40 @@
 // ** xref:02-05-validating-env.adoc[2.5 Validating the environment]
 
 * 3. Scenario Spain
-** xref:01-01-starting-point.adoc[3.1 Setup]
-** xref:01-01-starting-point.adoc[3.2 Execution]
-** xref:01-01-starting-point.adoc[3.2 Hints]
-** xref:01-01-starting-point.adoc[3.2 Survey]
+** xref:03-01-setup.adoc[3.1 Setup]
+** xref:03-02-execution.adoc[3.2 Execution]
+** xref:03-03-hints.adoc[3.2 Hints]
+** xref:03-04-survey.adoc[3.4 Survey]
 
 * 4. Scenario France
-** xref:01-01-starting-point.adoc[4.1 Setup]
-** xref:01-01-starting-point.adoc[4.2 Execution]
-** xref:01-01-starting-point.adoc[4.2 Hints]
-** xref:01-01-starting-point.adoc[4.2 Survey]
+** xref:04-01-setup.adoc[4.1 Setup]
+** xref:04-02-execution.adoc[4.2 Execution]
+** xref:04-03-hints.adoc[4.3 Hints]
+** xref:04-04-survey.adoc[4.4 Survey]
 
 * 5. Scenario Turkiye
-** xref:01-01-starting-point.adoc[5.1 Setup]
-** xref:01-01-starting-point.adoc[5.2 Execution]
-** xref:01-01-starting-point.adoc[5.2 Hints]
-** xref:01-01-starting-point.adoc[5.2 Survey]
+** xref:05-01-setup.adoc[5.1 Setup]
+** xref:05-02-execution.adoc[5.2 Execution]
+** xref:05-03-hints.adoc[5.3 Hints]
+** xref:05-04-survey.adoc[5.4 Survey]
 
 * 6. Scenario USA
-** xref:01-01-starting-point.adoc[6.1 Setup]
-** xref:01-01-starting-point.adoc[6.2 Execution]
-** xref:01-01-starting-point.adoc[6.2 Hints]
-** xref:01-01-starting-point.adoc[6.2 Survey]
+** xref:06-01-setup.adoc[6.1 Setup]
+** xref:06-02-execution.adoc[6.2 Execution]
+** xref:06-03-hints.adoc[6.3 Hints]
+** xref:06-04-survey.adoc[6.4 Survey]
 
 * 7. Scenario Canada
-** xref:01-01-starting-point.adoc[7.1 Setup]
-** xref:01-01-starting-point.adoc[7.2 Execution]
-** xref:01-01-starting-point.adoc[7.2 Hints]
-** xref:01-01-starting-point.adoc[7.2 Survey]
+** xref:07-01-setup.adoc[7.1 Setup]
+** xref:07-02-execution.adoc[7.2 Execution]
+** xref:07-03-hints.adoc[7.3 Hints]
+** xref:07-04-survey.adoc[7.4 Survey]
 
 * 8. Scenario Sweden
-** xref:01-01-starting-point.adoc[8.1 Setup]
-** xref:01-01-starting-point.adoc[8.2 Execution]
-** xref:01-01-starting-point.adoc[8.2 Hints]
-** xref:01-01-starting-point.adoc[8.2 Survey]
+** xref:08-01-setup.adoc[8.1 Setup]
+** xref:08-02-execution.adoc[8.2 Execution]
+** xref:08-03-hints.adoc[8.3 Hints]
+** xref:08-04-survey.adoc[8.4 Survey]
 
 
 // ** xref:03-01-notebook-based-llm.adoc[3.1 Notebook-Based LLM Example]
