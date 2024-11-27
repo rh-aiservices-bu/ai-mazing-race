@@ -50,3 +50,4 @@ package-lock.json
 lab-materials/04/datasets/*
 lab-materials/04/runs/*
 
+.ignorethisfolder/*
