@@ -1,6 +1,6 @@
 site:
   title: "The AI-mazing Race: An International Red Hat AI challenge"
-  url: https://redhat-scholars.github.io/course-template
+  url: https://github.com/rh-aiservices-bu/ai-mazing-race
   start_page: modules::index.adoc
 
 ui:
