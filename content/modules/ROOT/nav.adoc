@@ -14,37 +14,37 @@
 // ** xref:02-04-first-jupyter-notebook.adoc[2.4 Your first Jupyter Notebook]
 // ** xref:02-05-validating-env.adoc[2.5 Validating the environment]
 
-* 3. Scenario "Spain"
+* 3. Scenario Spain
 ** xref:01-01-starting-point.adoc[3.1 Setup]
 ** xref:01-01-starting-point.adoc[3.2 Execution]
 ** xref:01-01-starting-point.adoc[3.2 Hints]
 ** xref:01-01-starting-point.adoc[3.2 Survey]
 
-* 4. Scenario "France"
+* 4. Scenario France
 ** xref:01-01-starting-point.adoc[4.1 Setup]
 ** xref:01-01-starting-point.adoc[4.2 Execution]
 ** xref:01-01-starting-point.adoc[4.2 Hints]
 ** xref:01-01-starting-point.adoc[4.2 Survey]
 
-* 5. Scenario "Turkiye"
+* 5. Scenario Turkiye
 ** xref:01-01-starting-point.adoc[5.1 Setup]
 ** xref:01-01-starting-point.adoc[5.2 Execution]
 ** xref:01-01-starting-point.adoc[5.2 Hints]
 ** xref:01-01-starting-point.adoc[5.2 Survey]
 
-* 6. Scenario "USA"
+* 6. Scenario USA
 ** xref:01-01-starting-point.adoc[6.1 Setup]
 ** xref:01-01-starting-point.adoc[6.2 Execution]
 ** xref:01-01-starting-point.adoc[6.2 Hints]
 ** xref:01-01-starting-point.adoc[6.2 Survey]
 
-* 7. Scenario "Canada"
+* 7. Scenario Canada
 ** xref:01-01-starting-point.adoc[7.1 Setup]
 ** xref:01-01-starting-point.adoc[7.2 Execution]
 ** xref:01-01-starting-point.adoc[7.2 Hints]
 ** xref:01-01-starting-point.adoc[7.2 Survey]
 
-* 8. Scenario "Sweden"
+* 8. Scenario Sweden
 ** xref:01-01-starting-point.adoc[8.1 Setup]
 ** xref:01-01-starting-point.adoc[8.2 Execution]
 ** xref:01-01-starting-point.adoc[8.2 Hints]
@@ -77,5 +77,5 @@
 // ** xref:06-01-potential-imp-ref.adoc[6.1 Potential improvements and refinements]
 // ** xref:06-02-applicability-other.adoc[6.2 Applicability to other industries]
 
-* 7. End of Lab
-** xref:07-01-end-of-lab.adoc[7.1 Thanks]
+* 9. End of Lab
+** xref:09-01-end-of-lab.adoc[7.1 Thanks]
