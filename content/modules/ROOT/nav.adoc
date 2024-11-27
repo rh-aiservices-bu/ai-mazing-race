@@ -17,7 +17,7 @@
 * 3. Scenario Spain
 ** xref:03-01-setup.adoc[3.1 Setup]
 ** xref:03-02-execution.adoc[3.2 Execution]
-** xref:03-03-hints.adoc[3.2 Hints]
+** xref:03-03-hints.adoc[3.3 Hints]
 ** xref:03-04-survey.adoc[3.4 Survey]
 
 * 4. Scenario France
