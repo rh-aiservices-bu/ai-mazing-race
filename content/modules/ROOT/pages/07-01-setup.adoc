@@ -1,6 +1,16 @@
 = Setup
 include::_attributes.adoc[]
 
+// Wildfires in Canada
+// https://huggingface.co/arnaucas/wildfire-classifier
 
+or rather:
 
+https://huggingface.co/dima806/wildfire_types_image_detection
+
+* The hours is grave. There has been an increase in wildfires in Canada.
+* The situation has gotten so bad the the Prime Minister of Canada, Mr Hortons, has declared a "War on fire"
+* It is so bad in fact, that the Canadian Government has allocated 1 Billion Canadian Dollars (~ 300 USD) to the effort
+* Your team has been tasked with optimizing the image detection model that will be used to analyze images collected by an army of robotic beavers
+* The current issue is that ...
 

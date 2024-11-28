@@ -2,4 +2,36 @@
 include::_attributes.adoc[]
 
 
+== Hint #1
 
+.Click to reveal Hint #1
+[%collapsible]
+====
+Think about the problem a bit harder
+====
+
+== Hint #2
+
+
+== Hint #3 (Complete solution)
+
+.Click to reveal Hint #3
+[%collapsible]
+====
+
+* Create a project (widfire-{user})
+* small - pytorch - wb
+
+
+
+====
+
+serve model
+measure the responsetime
+send 500 requests
+
+- increase CPU
+- increase pods
+- add a GPU
+- modelmesh - ou kserve
+-

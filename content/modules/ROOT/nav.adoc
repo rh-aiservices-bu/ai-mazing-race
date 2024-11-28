@@ -2,7 +2,8 @@
 ** xref:01-01-starting-point.adoc[1.1 Setting the stage]
 
 * 2. Connection and Setup ({user})
-** xref:02-01-getting-connected.adoc[2.1 Getting connected]
+** xref:02-01-cluster-setup.adoc[2.1 Cluster Setup]
+** xref:02-02-getting-connected.adoc[2.2 Getting connected]
 
 * 3. Scenario Spain
 ** xref:03-01-setup.adoc[3.1 Setup]

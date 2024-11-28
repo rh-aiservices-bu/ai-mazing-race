@@ -1,0 +1,11 @@
+= Cluster Setup
+include::_attributes.adoc[]
+
+These are instructions for the Cluster Admin to execute
+
+(Note: we may or may not automate this part. For now, it's a manual `oc apply`)
+
+1. Log in as the cluster admin account into the OpenShift Console
+1. Open a Web Terminal
+1. execute:
+
