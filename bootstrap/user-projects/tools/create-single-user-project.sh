@@ -21,7 +21,7 @@ DASHBOARD_ROUTE=https://$(oc get route rhods-dashboard -n redhat-ods-application
 
 # Define some variables
 WORKBENCH_NAME="my-workbench"
-WORKBENCH_IMAGE="ic-workbench:1.2"
+WORKBENCH_IMAGE="pytorch:2024.1"
 PIPELINE_ENGINE="Tekton"
 BRANCH_NAME="main"
 
@@ -282,7 +282,7 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  storageClassName: ocs-storagecluster-ceph-rbd
+  storageClassName: gp3-csi
   volumeMode: Filesystem
 EOF
 
@@ -293,14 +293,14 @@ kind: Notebook
 metadata:
   annotations:
     notebooks.opendatahub.io/inject-oauth: 'true'
-    opendatahub.io/image-display-name: CUSTOM - Parasol Insurance Claim Processing Lab Workbench
+    opendatahub.io/image-display-name: Jupyter Notebook with Pytorch
     notebooks.opendatahub.io/oauth-logout-url: >-
       $DASHBOARD_ROUTE/projects/$USER_PROJECT?notebookLogout=$WORKBENCH_NAME
     opendatahub.io/accelerator-name: ''
     openshift.io/description: ''
     openshift.io/display-name: My Workbench
     notebooks.opendatahub.io/last-image-selection: '$WORKBENCH_IMAGE'
-    notebooks.opendatahub.io/last-size-selection: Standard
+    notebooks.opendatahub.io/last-size-selection: Small
     opendatahub.io/username: $USER_NAME
   name: $WORKBENCH_NAME
   namespace: $USER_PROJECT
