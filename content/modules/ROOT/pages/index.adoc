@@ -59,4 +59,4 @@ This {ic-lab} will ...
 
 // == Contributing
 
-// If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/parasol-insurance/[https://github.com/rh-aiservices-bu/parasol-insurance/,window=_blank]
+// If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/ai-mazing-race/[https://github.com/rh-aiservices-bu/ai-mazing-race/,window=_blank]
