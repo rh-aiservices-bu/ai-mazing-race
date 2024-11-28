@@ -17,7 +17,7 @@ asciidoc:
     ssh_command: ssh lab-user@bastion.{guid}.example.opentlc.com
     minio-user: minio
     minio-pass: minio-parasol
-    minio-endpoint: http://minio.ic-shared-minio.svc.cluster.local:9000/
+    minio-endpoint: http://minio.shared-minio.svc.cluster.local:9000/
     git-clone-repo-url: https://github.com/rh-aiservices-bu/ai-mazing-race.git
     git-clone-repo-branch: main
     user: userX
