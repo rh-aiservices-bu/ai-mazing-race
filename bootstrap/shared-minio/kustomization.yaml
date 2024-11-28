@@ -10,7 +10,7 @@ commonLabels:
 
 resources:
   # presync
-  - presync.yaml
+  # - presync.yaml
   # wave 0
   - namespace.yaml
   # wave 1
