@@ -11,6 +11,7 @@ PREFIX="/opt/app-root/src/ai-mazing-race/bootstrap/"
 oc delete ns shared-minio
 oc apply -k "${PREFIX}/shared-minio/"
 
+oc delete ns user1 user2 user3 user4 user5 
 oc apply -k "${PREFIX}/user-projects/"
 
 ```
