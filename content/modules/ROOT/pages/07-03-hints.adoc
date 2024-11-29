@@ -19,8 +19,23 @@ Think about the problem a bit harder
 [%collapsible]
 ====
 
+GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
+
 * Create a project (widfire-{user})
-* small - pytorch - wb
+* small - pytorch - wb, with 50 GB of disk.
+
+
+starting point: nb used for training:
+https://www.kaggle.com/code/dima806/wildfire-image-detection-vit
+
+wildfire dataset:
+https://www.kaggle.com/datasets/elmadafri/the-wildfire-dataset
+and
+<s3>
+
+HF:
+orig: https://huggingface.co/dima806/wildfire_types_image_detection
+mine:
 
 
 
@@ -33,5 +48,5 @@ send 500 requests
 - increase CPU
 - increase pods
 - add a GPU
-- modelmesh - ou kserve
+- modelmesh - or kserve?
 -
