@@ -21,6 +21,8 @@ Think about the problem a bit harder
 
 GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 
+`git clone https://github.com/rh-aiservices-bu/ai-mazing-race.git`
+
 * Create a project (widfire-{user})
 * small - pytorch - wb, with 50 GB of disk.
 

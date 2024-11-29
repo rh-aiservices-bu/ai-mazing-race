@@ -35,7 +35,9 @@ spec:
         args:
         - -ec
         - |-
-          curl -LO https://rhods-public.s3.amazonaws.com/demo-models/ic-models/accident/accident_detect.onnx
+          #curl -LO https://rhods-public.s3.amazonaws.com/demo-models/ic-models/accident/accident_detect.onnx
+          curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_types_image_detection_model01.zip
+          unzip wildfire_types_image_detection_model01.zip
 
           cat << 'EOF' | python3
           import boto3, os
@@ -56,10 +58,31 @@ spec:
           if models_bucket_name not in [bu["Name"] for bu in s3.list_buckets()["Buckets"]]:
               s3.create_bucket(Bucket=models_bucket_name)
 
-          # uploading to minio
-          filename = "accident_detect.onnx"
-          with open(filename, "rb") as f:
-              s3.upload_fileobj(f, "models", f'accident/{filename}')
+          # uploading zip to minio
+          #filename = "wildfire_types_image_detection_model01.zip"
+          #with open(filename, "rb") as f:
+          #    s3.upload_fileobj(f, "models", f'wildfire/1/{filename}')
+
+          # Directory to upload
+          directory = "./wildfire_types_image_detection_model01/"
+          bucket_name = "models"
+          base_s3_path = "wildfire/1/"
+
+          # Iterate over all files in the directory
+          for root, dirs, files in os.walk(directory):
+              for file in files:
+                  # Construct the full file path
+                  file_path = os.path.join(root, file)
+
+                  # Construct the S3 object key (path within the bucket)
+                  relative_path = os.path.relpath(file_path, directory)
+                  s3_key = os.path.join(base_s3_path, relative_path)
+
+                  # Upload the file
+                  with open(file_path, "rb") as f:
+                      s3.upload_fileobj(f, bucket_name, s3_key)
+
+                  print(f"Uploaded {file_path} to {bucket_name}/{s3_key}")
 
           EOF
         envFrom:

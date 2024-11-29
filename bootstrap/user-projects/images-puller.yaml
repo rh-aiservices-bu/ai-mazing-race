@@ -18,8 +18,8 @@ spec:
         name: image-puller
     spec:
       containers:
-      - name: ic-workbench
-        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/ic-workbench:1.2
+      - name: puller-pytorch
+        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/pytorch:2024.1
         command: ["tail"]
         args: ["-f", "/dev/null"]
         resources:
@@ -28,7 +28,7 @@ spec:
           requests:
             cpu: 10m
             memory: 10Mi
-      - name: ic-code-server
+      - name: puller-code-server
         image: quay.io/modh/codeserver@sha256:4b6b563e75f9e642bac9f21c4a2d8d72d77923fc391dd5dc985d4489c7258ef5
         command: ["tail"]
         args: ["-f", "/dev/null"]

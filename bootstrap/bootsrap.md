@@ -19,3 +19,12 @@ oc apply -k "${PREFIX}/user-projects/"
 ```
 
 
+
+```
+oc -n shared-minio delete job create-buckets
+oc apply -n shared-minio -f "${PREFIX}/shared-minio/create-buckets.yaml"
+
+oc -n shared-minio logs -l job-name=create-buckets
+
+oc -n shared-minio get route minio-console
+echo "https://$(oc -n shared-minio get route minio-console  -o jsonpath='{.spec.host}')/"
