@@ -179,6 +179,24 @@ spec:
                       AWS_DEFAULT_REGION: us
                       AWS_S3_ENDPOINT: $MINIO_HOST
                       AWS_S3_BUCKET: $USER_NAME
+                    ---
+                    apiVersion: v1
+                    kind: Secret
+                    metadata:
+                      name: aws-connection-shared-minio-wildfires
+                      labels:
+                        opendatahub.io/dashboard: "true"
+                        opendatahub.io/managed: "true"
+                      annotations:
+                        opendatahub.io/connection-type: s3
+                        openshift.io/display-name: Wildfire Model in Minio (stored in /wildfire/)
+                    type: Opaque
+                    stringData:
+                      AWS_ACCESS_KEY_ID: $MINIO_ROOT_USER
+                      AWS_SECRET_ACCESS_KEY: $MINIO_ROOT_PASSWORD
+                      AWS_DEFAULT_REGION: us
+                      AWS_S3_ENDPOINT: $MINIO_HOST
+                      AWS_S3_BUCKET: models
                     EOF
                   command:
                   - /bin/bash
