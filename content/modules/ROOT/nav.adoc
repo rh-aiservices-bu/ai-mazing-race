@@ -5,7 +5,7 @@
 ** xref:02-01-cluster-setup.adoc[2.1 Cluster Setup]
 ** xref:02-02-getting-connected.adoc[2.2 Getting connected]
 
-* 3. Scenario Spain 🇪🇸
+* 3. Scenario Spain 🇪🇸🌟
 ** xref:03-01-setup.adoc[3.1 Setup]
 ** xref:03-02-execution.adoc[3.2 Execution]
 ** xref:03-03-hints.adoc[3.3 Hints]
