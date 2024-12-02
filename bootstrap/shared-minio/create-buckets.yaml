@@ -38,6 +38,8 @@ spec:
           #curl -LO https://rhods-public.s3.amazonaws.com/demo-models/ic-models/accident/accident_detect.onnx
           curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_types_image_detection_model01.zip
           unzip wildfire_types_image_detection_model01.zip
+          curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_onnx.zip
+          unzip wildfire_onnx.zip
 
           cat << 'EOF' | python3
           import boto3, os
@@ -64,9 +66,11 @@ spec:
           #    s3.upload_fileobj(f, "models", f'wildfire/1/{filename}')
 
           # Directory to upload
-          directory = "./wildfire_types_image_detection_model01/"
+          directory = "./wildfire_onnx/"
+          # directory = "./wildfire_types_image_detection_model01/"
           bucket_name = "models"
-          base_s3_path = "wildfire/1/"
+          base_s3_path = "wildfire_onnx/1/"
+          # base_s3_path = "wildfire/1/"
 
           # Iterate over all files in the directory
           for root, dirs, files in os.walk(directory):
