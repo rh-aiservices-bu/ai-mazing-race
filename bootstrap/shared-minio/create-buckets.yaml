@@ -36,12 +36,14 @@ spec:
         - -ec
         - |-
           #curl -LO https://rhods-public.s3.amazonaws.com/demo-models/ic-models/accident/accident_detect.onnx
-          curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_types_image_detection_model01.zip
-          unzip wildfire_types_image_detection_model01.zip
-          curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_onnx.zip
-          unzip wildfire_onnx.zip
+          #curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_types_image_detection_model01.zip
+          #unzip wildfire_types_image_detection_model01.zip
+          time curl -LO https://rhods-public.s3.us-east-1.amazonaws.com/wildfire/wildfire_onnx.zip
+          time unzip wildfire_onnx.zip
+          mkdir -p wildfire_onnx
+          mv model.onnx ./wildfire_onnx/
 
-          cat << 'EOF' | python3
+          time cat << 'EOF' | python3
           import boto3, os
 
           s3 = boto3.client("s3",
@@ -87,7 +89,6 @@ spec:
                       s3.upload_fileobj(f, bucket_name, s3_key)
 
                   print(f"Uploaded {file_path} to {bucket_name}/{s3_key}")
-
           EOF
         envFrom:
         - secretRef:
