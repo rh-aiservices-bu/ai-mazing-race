@@ -183,13 +183,13 @@ spec:
                     apiVersion: v1
                     kind: Secret
                     metadata:
-                      name: aws-connection-shared-minio-wildfires
+                      name: aws-connection-minio-wildfire
                       labels:
                         opendatahub.io/dashboard: "true"
                         opendatahub.io/managed: "true"
                       annotations:
                         opendatahub.io/connection-type: s3
-                        openshift.io/display-name: Wildfire Model in Minio (stored in /wildfire/)
+                        openshift.io/display-name: Wildfire Model in Minio (stored in /wildfire_onnx/)
                     type: Opaque
                     stringData:
                       AWS_ACCESS_KEY_ID: $MINIO_ROOT_USER
