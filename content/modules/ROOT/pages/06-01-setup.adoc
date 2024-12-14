@@ -1,6 +1,24 @@
 = Setup
 include::_attributes.adoc[]
 
+// Wildfires in Canada
+// https://huggingface.co/arnaucas/wildfire-classifier
 
+or rather:
 
+https://huggingface.co/dima806/wildfire_types_image_detection
 
+* The situation is critical! There has been an increase in wildfires in Canada.
+* It has gotten so bad the the Prime Minister of Canada, Mr Hortons, has declared a "War on fire"
+* It is so bad in fact, that the Parliamentary Igloo has allocated 1 Billion Canadian Dollars (~ 300 USD) to the effort
+* Your team has been tasked with optimizing the image detection model that will be used to analyze images collected by an army of robotic beavers
+* The current issue is that ...
+
+Your specific task is as follows:
+* get the model deployed
+** either using the UI or the provided YAML
+* measure the response time for 1 inference of 1 image
+** using the provided code and image
+* Canada wants to be sure that it can analyze up to 1000 images per second
+** formulate and execute a test plan to confirm whether this will be possible
+** share your findings

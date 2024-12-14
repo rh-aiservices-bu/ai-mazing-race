@@ -17,29 +17,30 @@
 ** xref:04-03-hints.adoc[4.3 Hints]
 ** xref:04-04-survey.adoc[4.4 Survey]
 
-* 5. Scenario Turkiye 🇹🇷
+* 5. Scenario Türkiye 🇹🇷
 ** xref:05-01-setup.adoc[5.1 Setup]
 ** xref:05-02-execution.adoc[5.2 Execution]
 ** xref:05-03-hints.adoc[5.3 Hints]
 ** xref:05-04-survey.adoc[5.4 Survey]
 
-* 6. Scenario USA 🇺🇸
-** xref:06-01-setup.adoc[6.1 Setup]
-** xref:06-02-execution.adoc[6.2 Execution]
-** xref:06-03-hints.adoc[6.3 Hints]
-** xref:06-04-survey.adoc[6.4 Survey]
+* 6. Scenario Canada 🇨🇦🌲🔥
+** xref:06-01-setup.adoc[7.1 Setup]
+** xref:06-02-execution.adoc[7.2 Execution]
+** xref:06-03-hints.adoc[7.3 Hints]
+** xref:06-04-survey.adoc[7.4 Survey]
 
-* 7. Scenario Canada 🇨🇦🌲🔥
-** xref:07-01-setup.adoc[7.1 Setup]
-** xref:07-02-execution.adoc[7.2 Execution]
-** xref:07-03-hints.adoc[7.3 Hints]
-** xref:07-04-survey.adoc[7.4 Survey]
+* 7. Scenario Sweden 🇸🇪
+** xref:07-01-setup.adoc[8.1 Setup]
+** xref:07-02-execution.adoc[8.2 Execution]
+** xref:07-03-hints.adoc[8.3 Hints]
+** xref:07-04-survey.adoc[8.4 Survey]
 
-* 8. Scenario Sweden 🇸🇪
-** xref:08-01-setup.adoc[8.1 Setup]
-** xref:08-02-execution.adoc[8.2 Execution]
-** xref:08-03-hints.adoc[8.3 Hints]
-** xref:08-04-survey.adoc[8.4 Survey]
+* 8. End of Lab
+** xref:08-01-end-of-lab.adoc[7.1 Thanks]
 
-* 9. End of Lab
-** xref:09-01-end-of-lab.adoc[7.1 Thanks]
+
+// * 9. Bonus Scenario USA 🇺🇸
+// ** xref:09-01-setup.adoc[6.1 Setup]
+// ** xref:09-02-execution.adoc[6.2 Execution]
+// ** xref:09-03-hints.adoc[6.3 Hints]
+// ** xref:09-04-survey.adoc[6.4 Survey]
