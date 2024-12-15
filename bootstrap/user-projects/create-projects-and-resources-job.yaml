@@ -575,7 +575,7 @@ spec:
             resources:
               requests:
                 storage: 1Gi
-            storageClassName: ocs-storagecluster-cephfs
+            storageClassName: gp3-csi
             volumeMode: Filesystem
           EOF
 
