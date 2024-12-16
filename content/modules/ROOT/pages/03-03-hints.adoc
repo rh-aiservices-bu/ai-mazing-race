@@ -10,7 +10,27 @@ Think about the problem a bit harder
 ====
 
 == Hint #2
+====
+GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 
+`git clone https://github.com/rh-aiservices-bu/ai-mazing-race.git`
 
-== Hint #3
+* Create a project (stars-{user})
+* small - pytorch - wb, with 50 GB of disk.
+* Navigate to lab-materials/03 and open stars-classification.ipynb
 
+* Maybe installing some missing libraries with !pip
+* train_test_split has something wrong...
+* plt.show() is used to visualize the confusion matrix
+====
+
+== Hint #3 (Complete solution)
+
+.Click to reveal Hint #3
+[%collapsible]
+====
+
+* !pip install seaborn
+* remove rhoai_is_great=True from train_test_split in "Train the Model" section
+* substitute plt.show_me_the_stars with plt.show()
+====
