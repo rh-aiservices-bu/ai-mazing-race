@@ -1,5 +1,26 @@
 = Hints
 include::_attributes.adoc[]
 
+== Hint #1
 
+.Click to reveal Hint #1
+[%collapsible]
+====
+Half of the nickname of the best friend of Merry Brandybuck will help you a lot! 
+====
+
+== Hint #2
+.Click to reveal Hint #1
+[%collapsible]
+====
+If only I had something in OpenShift that can build a new container image... 
+====
+
+
+== Hint #3
+.Click to reveal Hint #1
+[%collapsible]
+====
+Have you heard about the Notebook CR (Custom Resource) from OpenShift AI?
+====
 

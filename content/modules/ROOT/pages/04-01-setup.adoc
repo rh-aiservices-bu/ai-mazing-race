@@ -1,6 +1,9 @@
 = Setup
 include::_attributes.adoc[]
 
+* The situation is critical...
+* The French government has received a picture from one of its spies, along with some code.
+* But there is a strike at the Ministry of the Interior. So they don't have access to the servers ro run this code and decrypt the message hidden in the picture!
+* They need your help.
 
-
-
+Armed only with you OpenShift AI, you must recover this data, by whatever means necessary...
