@@ -6,7 +6,8 @@ include::_attributes.adoc[]
 .Click to reveal Hint #1
 [%collapsible]
 ====
-Think about the problem a bit harder
+* Maybe installing some missing libraries with !pip
+* Some of the parameters in the code could be wrong...
 ====
 
 == Hint #2
@@ -21,7 +22,6 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 * small - pytorch - wb, with 50 GB of disk.
 * Navigate to lab-materials/03 and open stars-classification.ipynb
 
-* Maybe installing some missing libraries with !pip
 * train_test_split has something wrong...
 * plt.show() is used to visualize the confusion matrix
 ====
