@@ -10,6 +10,8 @@ Think about the problem a bit harder
 ====
 
 == Hint #2
+.Click to reveal Hint #1
+[%collapsible]
 ====
 GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 
