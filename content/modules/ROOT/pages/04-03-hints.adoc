@@ -1,26 +1,155 @@
 = Hints
 include::_attributes.adoc[]
 
-== Hint #1
+== Task 1 - The message
 
-.Click to reveal Hint #1
+=== Hint #1
+
+.Click to reveal
 [%collapsible]
 ====
 Half of the nickname of the best friend of Merry Brandybuck will help you a lot! 
 ====
 
-== Hint #2
-.Click to reveal Hint #1
+=== Solution
+
+.Click to reveal
 [%collapsible]
 ====
-If only I had something in OpenShift that can build a new container image... 
+The nickname of the best friend of Merry Brandybuck is Pippin (sorry if you were not a Lord of the Rings fan).
+
+So, the solution is to use the `pip` command to install the missing Python package. Two different ways to do this:
+
+- Create a new cell in your Notebook and use the `!pip install stegano` command to install the required Python packages.
+- Use the `pip install stegano` command in a terminal launched inside Jupyter.
 ====
 
+== Task 2 - The environment
 
-== Hint #3
-.Click to reveal Hint #1
+Not really a hint, but before you loose too much time on digging this out, here is an info we got _from_ a friend: `quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074`
+
+You're welcome!
+
+=== Hint #1
+
+.Click to reveal
+[%collapsible]
+====
+Think out of the box of the out-of-the-box Workbench images!
+====
+
+=== Hint #2
+.Click to reveal
+[%collapsible]
+====
+If only there was something in OpenShift that can **Build** a new container image **Config**... 
+====
+
+=== Hint #3
+.Click to reveal
+[%collapsible]
+====
+A basic Containerfile is enough to build a new container image. You just need to add what is missing...
+====
+
+=== Solution
+.Click to reveal
+[%collapsible]
+====
+You need to create a new container image that includes the missing Python package. To do this, a simple Containerfile is enough. 
+
+Here is an example you can use:
+
+```Dockerfile
+FROM quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074
+
+RUN pip install stegano
+```
+
+**Method 1**
+
+* From the OpenShift Console, open an **OpenShift command line terminal** (click on the >_ logo at the top right of the console and start the Console).
+* Create the BuildConfig using the `oc new-build` command:
+
+```bash
+oc new-build --name=ai-mazing-race-stegano -D $'FROM quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074\nRUN pip install stegano'
+```
+
+* You can watch the process of building the new container image by running the following command:
+
+```bash
+oc logs -f bc/ai-mazing-race-stegano
+```
+
+**Method 2**
+
+* From the OpenShift Console, create a new ImageStream called `ai-mazing-race-stegano`.
+* Create a new BuildConfig called `ai-mazing-race-stegano` and link it to the ImageStream. Here is the YAML configuration you can use:
+
+```yaml
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: ai-mazing-race-stegano
+  labels:
+    build: ai-mazing-race-stegano
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'ai-mazing-race-stegano:latest'
+  strategy:
+    type: Docker
+    dockerStrategy:
+      from:
+        kind: DockerImage
+        name: 'odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074'
+  source:
+    type: Dockerfile
+    dockerfile: |-
+      FROM quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074
+      RUN pip install stegano
+```
+* Launch the build by clicking on **Start Build** in the Actions drop-down of the new BuildConfig.
+
+Congratulations! You have created a new container image that includes the missing Python package. Take note of its address `image-registry.openshift-image-registry.svc:5000/<your_project_name>/ai-mazing-race-stegano`
+
+====
+
+== Task 3 - Setting everything up
+
+If you were an OpenShift AI admin, it would be easy to import the new container image into the OpenShift AI environment. But you are not. So you need to find a way to use this new container image for the President's workbench...
+
+=== Hint #1
+.Click to reveal
 [%collapsible]
 ====
 Have you heard about the Notebook CR (Custom Resource) from OpenShift AI?
+====
+
+=== Hint #2
+.Click to reveal
+[%collapsible]
+====
+You can create a new Notebook CR that uses the new container image you have created. Or just "hack" an existing one...
+====
+
+=== Solution
+.Click to reveal
+[%collapsible]
+====
+Behind the scene, when you create a Workbench, a Notebook CR is created in OpenShift. But you can also directly create a new Notebook CR that uses the new container image you have created. Or here, the easiest way would simply be to slightly modify the existing Notebook CR.
+
+Recipe:
+
+* Stop your Workbench.
+* From the OpenShift Console, go to the **Home->API Explorer**.
+* Filter/find the **Notebook** object in the group kubeflow.org at version v1. Click on it.
+* Make sure you are on your project and click on the **Instances** tab.
+* Click on the **Name** of your Notebook (Workbench).
+* In the YAML tab, look for the field `image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications...`
+* Replace the value of the `image` field by the ImageStream name you created. Normally it should be: `image-registry.openshift-image-registry.svc:5000/<your_project_name>/ai-mazing-race-stegano`.
+* Get back to OpenShift AI. Your Workbench will show that the Notebook image it is using is **Deleted**. That's not exactly true, it's just not available in the images that OpenShift AI knows about...
+* Start your Workbench. It will use the new container image you have created. You can now directly run the cell! Without typing anything. Mission accomplished, the President sends his thanks!
 ====
 
