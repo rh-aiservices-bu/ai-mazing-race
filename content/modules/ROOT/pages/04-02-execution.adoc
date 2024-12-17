@@ -1,12 +1,16 @@
 = Execution
 include::_attributes.adoc[]
 
-In the folder `lab-materials/04` you will find the a Notebook file: `04-decrypt.ipynb` and a picture. That's everything the French government has provided you with. Retrieve the message...
+There will be three different tasks to perform to fulfil your mission. For each task, on the next page, you will find some hints to help you solve it. If you are stuck, solutions are also provided. They can also help you verify your own solution.
 
-Once done, you must make it as easy as possible for the President to decrypt the message by himself. Through a lot of training, he managed to learn to do the following things (and only those!):
+== Task 1 - The message
 
-* From OpenShift AI, starting a pre-existing Workbench.
-* Opening a Notebook.
-* Running a single cell.
+In the folder `lab-materials/04` you will find a Notebook file: `04-decrypt.ipynb` and a picture. That's everything the French government has provided you with. Retrieve the message...
 
-So you must set up your environment to be able to do that. And only that, no commands, no cell creation, no nothing else. Just the three steps above.
+== Task 2 - The environment
+
+Now that you know what you need to retrieve the message, you must create an environment where the President can decrypt the message by himself. Remember, the President will only be able to use the mouse to launch a Workbench, open a Notebook, and run a cell. So all batteries must be included!
+
+== Task 3 - Setting everything up
+
+Prepare your project to allow the President to decrypt the message. Just remember you are only a user in this environment, not an admin. So this may complicate things a bit...
