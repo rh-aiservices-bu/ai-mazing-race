@@ -8,7 +8,7 @@ commonLabels:
 resources:
   - workbench-imagestream.yaml
   - odhdashboardconfig.yaml
-
+  - rbac-presync-monitoring.yaml
   # - presync.yaml
   # # wave 0
   # - gp3-remove-default.yaml
