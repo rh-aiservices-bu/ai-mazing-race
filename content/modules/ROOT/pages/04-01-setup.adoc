@@ -2,8 +2,13 @@
 include::_attributes.adoc[]
 
 * The situation is critical...
-* The French government has received a picture from one of its spies, along with some code.
-* But there is a strike at the Ministry of the Interior. So they don't have access to the servers ro run this code and decrypt the message hidden in the picture!
-* They need your help.
+* The French government has received a picture from one of its spies, as well as a tiny piece of code.
+* They are sure the picture contains a hidden message.
+* However, there is a strike at the Ministry of Defense. So no one had access to the servers ro run this code and decrypt the message hidden in the picture!
 
-Armed only with you OpenShift AI, you must recover this data, by whatever means necessary...
+They need your help. As a seasoned OpenShift AI user, you are their only hope...
+
+Here are the two main objectives you need to achieve in this mission:
+
+* Retrieve the message hidden in the picture.
+* Set up a Jupyter Notebook environment that will allow the President to decrypt the message by himself. With a huge constraint: for security reasons, he won't have access to any keyboard. So he will only be able to use the mouse to launch a Workbench, open a Notebook, and run a cell.
