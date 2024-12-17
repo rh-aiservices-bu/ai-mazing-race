@@ -24,6 +24,9 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 
 * train_test_split has something wrong...
 * plt.show() is used to visualize the confusion matrix
+
+* In the Jupyter Notebook, you have the possibility to use Elyra pipelines...
+* And then from the Data Science Pipelines UI you can setup pipeline schedule.
 ====
 
 == Hint #3 (Complete solution)
@@ -35,4 +38,7 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 * !pip install seaborn
 * remove rhoai_is_great=True from train_test_split in "Train the Model" section
 * substitute plt.show_me_the_stars with plt.show()
+* From the Jupyter Notebook add a New Data Science Pipeline Editor, and drag and drop the stars-classification.ipynb file
+* Run the pipeline from Elyra / Data Science Pipeline Editor
+* Open the OpenShift AI dashboard, go to Data Science Pipelines and setup schedule for 24 hours
 ====

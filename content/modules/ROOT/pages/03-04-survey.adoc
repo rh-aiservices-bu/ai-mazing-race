@@ -2,6 +2,3 @@
 include::_attributes.adoc[]
 
 == End of alloted time
-
-Link to survey app to collect feedback from attendees
-
