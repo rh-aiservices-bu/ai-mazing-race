@@ -17,6 +17,8 @@ Your specific tasks are as follows:
 
 ** Use a workbench image that is suitable for running the notebook.
 
+** Investigate which workbench container size is the smallest size that you can run the notebook
+
 * Resolve the issues with the classification report and confusion matrix.
 
 ** Ensure precision and accuracy levels reach 98% or higher.

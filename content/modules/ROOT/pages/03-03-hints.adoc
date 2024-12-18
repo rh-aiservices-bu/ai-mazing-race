@@ -19,7 +19,7 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 `git clone https://github.com/rh-aiservices-bu/ai-mazing-race.git`
 
 * Create a project (stars-{user})
-* small - pytorch - wb, with 50 GB of disk.
+* small - pytorch - wb, with 5 GB of disk.
 * Navigate to lab-materials/03 and open stars-classification.ipynb
 
 * train_test_split has something wrong...
