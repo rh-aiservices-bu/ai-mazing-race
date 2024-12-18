@@ -24,5 +24,4 @@ Your specific tasks are as follows:
 * Implement an automated solution for the notebook to run every 24 hours, 
 every day of the week.
 
-** Deploy the notebook using Data Science Pipelines and schedule it to run every 24 hours.
-** Share your findings with the ASA team.
+* Share your findings with the ASA team.
