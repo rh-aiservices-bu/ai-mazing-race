@@ -20,15 +20,47 @@ spec:
     notebookNamespace: rhods-notebooks
     pvcSize: 5Gi
   notebookSizes:
-    - name: Standard1
+    - name: Minuscule
       resources:
+        requests:
+          cpu: '50m'
+          memory: 50Mi
         limits:
-          cpu: '2'
-          memory: 8Gi
+          cpu: '100m'
+          memory: 100Mi
+    - name: Tiny
+      resources:
+        requests:
+          cpu: '100m'
+          memory: 100Mi
+        limits:
+          cpu: '400m'
+          memory: 400Mi
+    - name: Less Tiny
+      resources:
+        requests:
+          cpu: '100m'
+          memory: 500Mi
+        limits:
+          cpu: '1000m'
+          memory: 1000Mi
+    - name: Kinda Small
+      resources:
         requests:
           cpu: '1'
-          memory: 6Gi
-    - name: Standard2
+          memory: 1Gi
+        limits:
+          cpu: '2'
+          memory: 2Gi
+    - name: Small
+      resources:
+        requests:
+          cpu: '2'
+          memory: 4Gi
+        limits:
+          cpu: '2'
+          memory: 4Gi
+    - name: Standard
       resources:
         limits:
           cpu: '4'
@@ -36,7 +68,7 @@ spec:
         requests:
           cpu: '4'
           memory: 6Gi
-    - name: Standard3
+    - name: Plus
       resources:
         limits:
           cpu: '6'
