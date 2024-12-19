@@ -1,5 +1,46 @@
 = Hints
 include::_attributes.adoc[]
 
+== Hint #1
 
+.Click to reveal Hint #1
+[%collapsible]
+====
+Each time you run the cells, your previous experiment results will disappear like crumbs on a plate. If you want to revisit your results to compare, make sure to save your results before starting a new experiment!
+====
 
+== Hint #2
+.Click to reveal Hint #1
+[%collapsible]
+====
+Your Notebook is a great place to train and experiment, but is it enough to deploy your best model on OpenShift AI? Think about where your model needs to be stored for deployment to access it!
+====
+
+== Hint #3 (Complete solution)
+
+.Click to reveal Hint #3
+[%collapsible]
+====
+* Store your best performing model in your MinIO bucket with the same folder structure.
+
+    `models/<version>/baklava/1/onnx.model`
+    `models/<version>/baklava/1/artifacts/scaler.pkl`
+
+* To deploy:
+- Model deployment name: baklava
+- Serving runtime: OpenVino Model Server
+- Model framework: onnx - 1
+- Model server replicas: 1
+- Compute resources per replica: Small
+- Model route:
+
+    > Select Make deployed models available through an external route
+    > Uncheck the Require token authentication for now
+
+- Model location:
+
+    > Select from existing data connection and pick `models`
+    > Path: `models/<version>/baklava`
+
+..and hit Deploy
+====
