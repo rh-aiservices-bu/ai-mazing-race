@@ -197,6 +197,27 @@ spec:
                       AWS_DEFAULT_REGION: us
                       AWS_S3_ENDPOINT: $MINIO_HOST
                       AWS_S3_BUCKET: models
+                    ---
+                    kind: Secret
+                    apiVersion: v1
+                    metadata:
+                      name: maas-hosted-granite
+                      labels:
+                        opendatahub.io/dashboard: 'true'
+                      annotations:
+                        opendatahub.io/connection-type-ref: anythingllm-generic-openai
+                        openshift.io/description: Connect to a granite model
+                        openshift.io/display-name: MaaS-Hosted Granite
+                    data:
+                      DISABLE_TELEMETRY: dHJ1ZQ==
+                      EMBEDDING_ENGINE: bmF0aXZl
+                      GENERIC_OPEN_AI_API_KEY: eW91ci10b2tlbi1oZXJl
+                      GENERIC_OPEN_AI_BASE_PATH: aHR0cHM6Ly9ncmFuaXRlLTMtOGItaW5zdHJ1Y3QtbWFhcy1hcGljYXN0LXByb2R1Y3Rpb24uYXBwcy5wcm9kLnJob2FpLmNsdXN0ZXIuY29tOjQ0My92MQ==
+                      GENERIC_OPEN_AI_MAX_TOKENS: MTAyNA==
+                      GENERIC_OPEN_AI_MODEL_PREF: Z3Jhbml0ZS0zLThiLWluc3RydWN0
+                      GENERIC_OPEN_AI_MODEL_TOKEN_LIMIT: NDA5Ng==
+                      VECTOR_DB: bGFuY2VkYg==
+                    type: Opaque
                     EOF
                   command:
                   - /bin/bash
