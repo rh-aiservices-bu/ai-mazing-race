@@ -21,11 +21,6 @@ Your Notebook is a great place to train and experiment, but is it enough to depl
 .Click to reveal Hint #3
 [%collapsible]
 ====
-* Store your best performing model in your MinIO bucket with the same folder structure.
-
-    `models/<version>/baklava/1/onnx.model`
-    `models/<version>/baklava/1/artifacts/scaler.pkl`
-
 * To deploy:
 - Model deployment name: baklava
 - Serving runtime: OpenVino Model Server
@@ -40,7 +35,9 @@ Your Notebook is a great place to train and experiment, but is it enough to depl
 - Model location:
 
     > Select from existing data connection and pick `models`
-    > Path: `models/<version>/baklava`
+    > Path: `models/<your-version>/baklava`
 
-..and hit Deploy
+..and hit Deploy!
+
+Then use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
 ====
