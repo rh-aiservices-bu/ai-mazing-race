@@ -1,11 +1,7 @@
-= Cluster Setup
+= Cluster Setup (for the admin/moderators)
 include::_attributes.adoc[]
 
-These are instructions for the Cluster Admin to execute
+The cluster has been automatically provisioned and configured.
 
-(Note: we may or may not automate this part. For now, it's a manual `oc apply`)
-
-1. Log in as the cluster admin account into the OpenShift Console
-1. Open a Web Terminal
-1. execute:
+If we find that we need to refine that and don't have the time to gitops it, said refinements will show up here.
 
