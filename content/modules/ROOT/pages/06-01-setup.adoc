@@ -1,24 +1,43 @@
-= Setup
+= Briefing
 include::_attributes.adoc[]
 
 // Wildfires in Canada
 // https://huggingface.co/arnaucas/wildfire-classifier
 
-or rather:
+// or rather:
 
-https://huggingface.co/dima806/wildfire_types_image_detection
+// https://huggingface.co/dima806/wildfire_types_image_detection
 
-* The situation is critical! There has been an increase in wildfires in Canada.
+== Situation
+
+* The situation is critical, eh!
+* There has been a surge of wildfires in Canada, menacing to destroy the entire country.
 * It has gotten so bad the the Prime Minister of Canada, Mr Hortons, has declared a "War on fire"
-* It is so bad in fact, that the Parliamentary Igloo has allocated 1 Billion Canadian Dollars (~ 300 USD) to the effort
-* Your team has been tasked with optimizing the image detection model that will be used to analyze images collected by an army of robotic beavers
-* The current issue is that ...
+* As a result, the National Igloo has allocated 1 Trillion Canadian Dollars (~ 300 USD) to the effort
+* The first step is to asses the extent of the current situation.
+** To do so, Canada has already launched operation MAPLE (Monitoring Aerial Photography Land Evaluation)
+** A flock of robotic Canada Geese drones will be surveying the entire country and sending in the images back
+** Once received, each image will have to be assessed for Fire, Smoke, or the lack thereof.
 
-Your specific task is as follows:
-* get the model deployed
-** either using the UI or the provided YAML
-* measure the response time for 1 inference of 1 image
-** using the provided code and image
-* Canada wants to be sure that it can analyze up to 1000 images per second
-** formulate and execute a test plan to confirm whether this will be possible
-** share your findings
+
+== Mission
+
+* As part of your instruction set, you will find information on how to deploy and image detection model on Red Hat OpenShift AI.
+* This model has already been trained, and we assume it to be of good quality. (Also, it's urgent, and that's all we have)
+* There are however concerns about performance aspect of this model...
+** Given the large number of robotic geese deployed, and the number of pictures that will be sent in, we need some assurance that the images can be processed in real time or as close to it as we can
+* Your specific mission:
+** Phase 1:
+** get the model deployed using the default instructions
+** measure the average response time for inference
+*** with 1 inference request at a time
+*** with multiple and simultaneous inference requests
+** estimate the inference throughput of this setup. (expressed in requests per minute)
+** Phase 2:
+*** describe the various approaches that one might take in order to either:
+**** increase the effective throughput
+**** decrease the operating costs
+*** perform as many experiments are you are able to in order to test the approaches
+*** describe and extrapolate your findings on how much improvement you think you can bring
+
+Go to the next page for detailed location of useful materials.
