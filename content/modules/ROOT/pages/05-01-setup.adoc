@@ -1,6 +1,21 @@
 = Setup
 include::_attributes.adoc[]
 
+## A Community-Driven Approach to Optimizing Baklava Demand Prediction
 
+Did you know that Istanbul alone devours a staggering 2,000 tons of baklava during the festive season? That's a lot of sweet treats!
 
+To ensure that every baklava lover gets their sweet fix, and to meet this incredible demand without overproducing or understocking, we've built a foundational predictive model to forecast demand.
 
+But we believe we can do better.
+
+Let's work together to ensure a successful festive season for everyone!
+
+We invite you to join our effort to optimize this model. Your task is to:
+
+- **Experiment with Hyperparameters**: Tweak parameters like `epochs`, `batch_size`, `learning_rate`, and `hidden_layer_units` to find the optimal configuration.
+- **Store Your Experiments**: Record the hyperparameters you used, the resulting model artifacts (the trained model), and evaluation metrics in Model Registry.
+- **Deploy the Best Model**: Once you've identified the most performant model, deploy it to your environment.
+- **Test Your Model**: Use the provided notebook to make predictions and evaluate the deployed model's performance.
+
+By making your experiments and storing your findings, you'll be part of a collaborative effort to make the most of this sweet data science challenge. 
