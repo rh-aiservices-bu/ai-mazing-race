@@ -32,7 +32,7 @@ asciidoc:
     ocp-short: "OpenShift"
     argocd: "ArgoCD"
     ocp-gitops: "OpenShift GitOps"
-    company-name: "AI-mazing Race inc."
+    company-name: "AI-mazing Race"
     ic-lab: "lab"
     ic: "{company-name} {ic-lab}"
 

@@ -1,3 +1,40 @@
-= Starting Point
+= Setting the stage
 include::_attributes.adoc[]
 
+== The situation is critical!
+
+When the world is in danger, and AI is the solution, who do they call? Well, they call **YOU**!
+
+And by you, we really mean you fine people attending this event!
+
+But let's be clear, this event is not a reality show! You are not competing AGAINST each other. You are either working alone, or as a group, to come up with the best possible solution to the problem each country is facing. Some say there is strength in numbers, but we leave the organizational details up to you! After all, you are the Experts!
+
+Oh, and by the way, even if you succeed, you'll mostly get thanks and pats on the back, not a million dollars.
+
+== The **spirit** of the exercise
+
+Each scenario will be time-constrained, and it's likely to be difficult to complete all the tasks during the alloted time.
+
+You need to act as if this were a relay race. As if after the allotted time, you had to pass the baton to another team.
+
+Therefore, more than PERFORMING any specific action, your task is to DOCUMENT how you are approaching the task, what confuses you, what you then trial and error, what works, what fails, what conclusions you draw from these events.
+
+At the end of the allotted time, you will be asked to either vote on a poll, or to submit your findings.
+
+Make sure that you keep clear notes, in plain text or in Markdown, ready to submit at the end of the exercise!
+
+== Working environment
+
+* A shared Red Hat OpenShift AI cluster is provider for all.
+* Each attendee has access to a regular user account.
+* Only the moderators have access to a Cluster Admin and RHOAI Admin accounts, and they will only use them in DIRE circumstances.
+* The environment has FINITE resources.
+* The environments does not have any GPUs available, so no need to ask, it's just not there.
+* The version of RHOAI that is deployed is RHOAI 2.16.
+* To speed things up, some things have been pre-provisioned for you.
+* Other than that, this environment is a a fairly vanilla version of Red Hat OpenShift AI.
+
+== Rules and limitations
+
+* You can ask the moderators any question you want during the event, but they will only answers questions that do not un-necessarily reveal answers to the scenarios.
+* There is no perfect solution for the scenarios. However, over time, you will be able to review solutions from other participants and make up your own mind as to which might be best.

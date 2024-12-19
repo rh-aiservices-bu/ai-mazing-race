@@ -1,62 +1,24 @@
 = {lab_name}
 include::_attributes.adoc[]
 
-== {ic} Overview
+[.bordershadow]
+// image::amazing-race-logo.jpg[]
+image::ai-mazing2.webp[alt=logo,width=600,height=600]
 
-This {ic-lab} will ...
+== Teaser
 
-// The information, code, models and techniques it contains are illustrations of what a first prototype could look like. It is not the definitive way of addressing the stated requirements.
+Are you ready to run the **Predictive AI** gauntlet? In this fast-paced adventure, you will tackle high-stakes scenarios inspired by diverse industries, use-cases, and countries. You will need to draw on your AI knowledge, grit, creativity, and soft skills to assist these nations in need.
 
-// == Disclaimer
+You and your ragtag band of IT professionals will have to think on your feet to provide solutions powered by **Red Hat AI products** to multiple countries. The pressure is on! Can you rise to the challenge? Can you save the day? And more importantly... can you do it within budget?
 
-// This {ic-lab} is an example of what a customer could build using {rhoai}. {rhoai} itself has no specific feature related to Insurance Claim Processing.
+== Fair warning
 
-// This {ic-lab} makes use of large language models (LLM) and image processing models. These models are not included in the {rhoai} product. They are provided as a convenience for this {ic-lab}.
+You may not have all the answers, but we sure have a lot of questions!
 
-// The quality of these models is enough for a prototype. Choosing the right model to use in a production environment is a complex task that requires a lot of experimentation and tuning. This {ic-lab} does not cover this aspect.
+This lab is meant to be a challenging exercise, for which you may or may not already have all the required knowledge!
 
-// == Timetable
+We don't actually care. We are more interested in seeing how you learn by doing! Or even better, by pairing up with a stranger who may just happen to have the information you lack.
 
-// This is a tentative timetable for the materials that will be presented.
+Although we provide hints and even some solutions, we really hope you can come up with things that are BETTER than what we had in mind.
 
-// [width="90%",cols="3,^2,^2,10",options="header"]
-// |=========================================================
-// | Name |Duration |Type |Description
-
-// |Background |5 | Presentation
-// a|- We describe what the desired end state looks like.
-// - Describe overall user experience and underlying architecture.
-// - Share mockups for better visualization
-
-// |Connection and Setup |5 | Hands-On
-// a|- Attendees get connected
-// - help validate environment health
-// - access the playpen project
-
-// |LLM |20 | Hands-On
-// a|- summarization check
-// - sentiment check
-// - Model Comparison check and choice
-// - prompt engineering exercise
-// - confidence-check pipeline
-
-// |Image Processing |20 | Hands-On
-// a|- car recognition checks
-// - re-training exercise
-// - model deployment
-
-// |Web App  |20 | Hands-On
-// a|- deployment
-// - update
-// - RAG
-
-// |Productization  |5 | Presentation + discussion
-// a|- What else could we add that would have value?
-// - What else could we do following the same patterns?
-
-// |=========================================================
-
-
-// == Contributing
-
-// If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/ai-mazing-race/[https://github.com/rh-aiservices-bu/ai-mazing-race/,window=_blank]
+If you're up for this AI-mazing chance to hack away, go to the next page so we can set the stage!
