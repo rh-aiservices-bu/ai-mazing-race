@@ -22,6 +22,11 @@ spec:
             repoURL: https://github.com/rh-aiservices-bu/ai-mazing-race.git
             targetRevision: main
             path: bootstrap/user-projects
+          - cluster: in-cluster
+            name: model-registry
+            repoURL: https://github.com/rh-aiservices-bu/ai-mazing-race.git
+            targetRevision: main
+            path: bootstrap/model-registry
   template:
     metadata:
       name: "{{name}}"
