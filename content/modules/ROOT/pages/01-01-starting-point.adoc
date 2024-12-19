@@ -34,7 +34,8 @@ Make sure that you keep clear notes, in plain text or in Markdown, ready to subm
 * To speed things up, some things have been pre-provisioned for you.
 * Other than that, this environment is a a fairly vanilla version of Red Hat OpenShift AI.
 
-== Rules and limitations
+== Rules and regulations
 
 * You can ask the moderators any question you want during the event, but they will only answers questions that do not un-necessarily reveal answers to the scenarios.
 * There is no perfect solution for the scenarios. However, over time, you will be able to review solutions from other participants and make up your own mind as to which might be best.
+* This is a completely "open book" exercise! Search engines and AI assistants are not only tolerated, but encouraged even!
