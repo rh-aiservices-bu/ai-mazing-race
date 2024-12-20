@@ -1,6 +1,6 @@
 ## AI-Mazing Race - Stars Classification in Spain
 
-Welcome to the Stars Classification challenge hapenning in the beatiful Canary Islands in Spain.
+Welcome to the Stars Classification challenge happening in the beautiful Canary Islands in Spain.
 
 To run this notebook and process the data (currently stored in stars.csv) copy the whole git repository and run it in a OpenShift AI workbench.
 

@@ -197,6 +197,28 @@ spec:
                       AWS_DEFAULT_REGION: us
                       AWS_S3_ENDPOINT: $MINIO_HOST
                       AWS_S3_BUCKET: models
+                    ---
+                    kind: Secret
+                    apiVersion: v1
+                    metadata:
+                      name: maas-hosted-granite
+                      labels:
+                        opendatahub.io/dashboard: 'true'
+                      annotations:
+                        opendatahub.io/connection-type-ref: anythingllm-generic-openai
+                        openshift.io/description: Connect to a granite model
+                        openshift.io/display-name: MaaS-Hosted Granite
+                    data:
+                      DISABLE_TELEMETRY: dHJ1ZQ==
+                      EMBEDDING_ENGINE: bmF0aXZl
+                      GENERIC_OPEN_AI_API_KEY: NjFlMWMxZjY4ZWRlZWUyZmY5NzRhMDMzZTk5MzVlMDQ=
+                      GENERIC_OPEN_AI_BASE_PATH: aHR0cHM6Ly9ncmFuaXRlLTMtOGItaW5zdHJ1Y3QtbWFhcy1hcGljYXN0LXByb2R1Y3Rpb24uYXBwcy5wcm9kLnJob2FpLnJoLWFpc2VydmljZXMtYnUuY29tOjQ0My92MQ==
+                      GENERIC_OPEN_AI_MAX_TOKENS: NTAwMA==
+                      GENERIC_OPEN_AI_MODEL_PREF: Z3Jhbml0ZS0zLThiLWluc3RydWN0
+                      LLM_PROVIDER: Z2VuZXJpYy1vcGVuYWk=
+                      GENERIC_OPEN_AI_MODEL_TOKEN_LIMIT: MTAwMDAw
+                      VECTOR_DB: bGFuY2VkYg==
+                    type: Opaque
                     EOF
                   command:
                   - /bin/bash
@@ -513,6 +535,209 @@ spec:
                       secretName: $WORKBENCH_NAME-tls
             readyReplicas: 1
           EOF
+
+          # Create the anythingLLM wb
+          cat << EOF | oc apply -f-
+          ---
+          kind: PersistentVolumeClaim
+          apiVersion: v1
+          metadata:
+            annotations:
+              openshift.io/description: ''
+              openshift.io/display-name: Granite - your rock solid AI assistant
+              volume.beta.kubernetes.io/storage-provisioner: ebs.csi.aws.com
+              volume.kubernetes.io/storage-provisioner: ebs.csi.aws.com
+            name: granite-your-rock-solid-ai-assistant
+            namespace: $USER_PROJECT
+            labels:
+              opendatahub.io/dashboard: 'true'
+          spec:
+            accessModes:
+              - ReadWriteOnce
+            resources:
+              requests:
+                storage: 5Gi
+            storageClassName: gp3-csi
+            volumeMode: Filesystem
+          ---
+          apiVersion: kubeflow.org/v1
+          kind: Notebook
+          metadata:
+            annotations:
+              notebooks.opendatahub.io/inject-oauth: 'true'
+              opendatahub.io/image-display-name: 'Custom Image: AnythingLLM 1.3'
+              opendatahub.io/accelerator-name: ''
+              openshift.io/description: An instance of AnythingLLM connected to a Granite LLM
+              openshift.io/display-name: Granite - your rock solid AI assistant
+              notebooks.opendatahub.io/last-image-selection: 'is-anythingllm:2024.1'
+              notebooks.opendatahub.io/last-size-selection: Small
+              opendatahub.io/username: $USER_NAME
+            name: granite-workbench
+            namespace: $USER_PROJECT
+            labels:
+              app: granite-workbench
+              opendatahub.io/dashboard: 'true'
+              opendatahub.io/odh-managed: 'true'
+              opendatahub.io/user: admin
+          spec:
+            template:
+              spec:
+                affinity: {}
+                containers:
+                  - resources:
+                      limits:
+                        cpu: '2'
+                        memory: 4Gi
+                      requests:
+                        cpu: '2'
+                        memory: 4Gi
+                    readinessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /notebook/$USER_PROJECT/granite-workbench/api
+                        port: notebook-port
+                        scheme: HTTP
+                      initialDelaySeconds: 10
+                      periodSeconds: 5
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    name: granite-workbench
+                    livenessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /notebook/$USER_PROJECT/granite-workbench/api
+                        port: notebook-port
+                        scheme: HTTP
+                      initialDelaySeconds: 10
+                      periodSeconds: 5
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    env:
+                      - name: NOTEBOOK_ARGS
+                        value: |-
+                          --ServerApp.port=8888
+                                            --ServerApp.token=''
+                                            --ServerApp.password=''
+                                            --ServerApp.base_url=/notebook/$USER_PROJECT/$WORKBENCH_NAME
+                                            --ServerApp.quit_button=False
+                                            --ServerApp.tornado_settings={"user":"$USER_NAME","hub_host":"$DASHBOARD_ROUTE","hub_prefix":"/projects/$USER_PROJECT"}
+                      - name: JUPYTER_IMAGE
+                        value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/is-anythingllm:2024.1'
+                      - name: SSL_CERT_FILE
+                        value: /etc/pki/tls/custom-certs/ca-bundle.crt
+                      - name: PIPELINES_SSL_SA_CERTS
+                        value: /etc/pki/tls/custom-certs/ca-bundle.crt
+                      - name: GIT_SSL_CAINFO
+                        value: /etc/pki/tls/custom-certs/ca-bundle.crt
+                      - name: PIP_CERT
+                        value: /etc/pki/tls/custom-certs/ca-bundle.crt
+                      - name: REQUESTS_CA_BUNDLE
+                        value: /etc/pki/tls/custom-certs/ca-bundle.crt
+                    ports:
+                      - containerPort: 8888
+                        name: notebook-port
+                        protocol: TCP
+                    imagePullPolicy: Always
+                    volumeMounts:
+                      - mountPath: /opt/app-root/src
+                        name: granite-your-rock-solid-ai-assistant
+                      - mountPath: /dev/shm
+                        name: shm
+                      - mountPath: /etc/pki/tls/custom-certs/ca-bundle.crt
+                        name: trusted-ca
+                        readOnly: true
+                        subPath: ca-bundle.crt
+                    envFrom:
+                      - secretRef:
+                          name: maas-hosted-granite
+                    image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/is-anythingllm:2024.1'
+                    workingDir: /opt/app-root/src
+                  - resources:
+                      limits:
+                        cpu: 100m
+                        memory: 64Mi
+                      requests:
+                        cpu: 100m
+                        memory: 64Mi
+                    readinessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /oauth/healthz
+                        port: oauth-proxy
+                        scheme: HTTPS
+                      initialDelaySeconds: 5
+                      periodSeconds: 5
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    name: oauth-proxy
+                    livenessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /oauth/healthz
+                        port: oauth-proxy
+                        scheme: HTTPS
+                      initialDelaySeconds: 30
+                      periodSeconds: 5
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    env:
+                      - name: NAMESPACE
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.namespace
+                    ports:
+                      - containerPort: 8443
+                        name: oauth-proxy
+                        protocol: TCP
+                    imagePullPolicy: Always
+                    volumeMounts:
+                      - mountPath: /etc/oauth/config
+                        name: oauth-config
+                      - mountPath: /etc/tls/private
+                        name: tls-certificates
+                    image: 'registry.redhat.io/openshift4/ose-oauth-proxy@sha256:4f8d66597feeb32bb18699326029f9a71a5aca4a57679d636b876377c2e95695'
+                    args:
+                      - '--provider=openshift'
+                      - '--https-address=:8443'
+                      - '--http-address='
+                      - '--openshift-service-account=$WORKBENCH_NAME'
+                      - '--cookie-secret-file=/etc/oauth/config/cookie_secret'
+                      - '--cookie-expire=24h0m0s'
+                      - '--tls-cert=/etc/tls/private/tls.crt'
+                      - '--tls-key=/etc/tls/private/tls.key'
+                      - '--upstream=http://localhost:8888'
+                      - '--upstream-ca=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt'
+                      - '--email-domain=*'
+                      - '--skip-provider-button'
+                      - '--openshift-sar={"verb":"get","resource":"notebooks","resourceAPIGroup":"kubeflow.org","resourceName":"granite-workbench","namespace":"$NAMESPACE"}'
+                      - '--logout-url=https://rhods-dashboard-redhat-ods-applications.apps.cluster-96q92.96q92.sandbox393.opentlc.com/projects/user1?notebookLogout=granite-workbench'
+                enableServiceLinks: false
+                serviceAccountName: $WORKBENCH_NAME
+                volumes:
+                  - name: granite-your-rock-solid-ai-assistant
+                    persistentVolumeClaim:
+                      claimName: granite-your-rock-solid-ai-assistant
+                  - emptyDir:
+                      medium: Memory
+                    name: shm
+                  - configMap:
+                      items:
+                        - key: ca-bundle.crt
+                          path: ca-bundle.crt
+                      name: workbench-trusted-ca-bundle
+                      optional: true
+                    name: trusted-ca
+                  - name: oauth-config
+                    secret:
+                      defaultMode: 420
+                      secretName: granite-workbench-oauth-config
+                  - name: tls-certificates
+                    secret:
+                      defaultMode: 420
+                      secretName: granite-workbench-tls
+            readyReplicas: 1
+          EOF
+
 
           # Git clone job
           cat << EOF | oc apply -f-

@@ -29,3 +29,14 @@ oc -n shared-minio logs -l job-name=create-buckets
 oc -n shared-minio get route minio-console
 echo "https://$(oc -n shared-minio get route minio-console  -o jsonpath='{.spec.host}')/"
 ```
+
+```
+## to manually retest the gitops pieces.
+
+## delete appset
+oc -n openshift-gitops delete applicationset bootstrap
+oc delete ns user1 user2 user3 user4 user5 user-projects
+
+## recreate appset
+oc apply -f ./bootstrap/applicationset/applicationset-bootstrap.yaml
+```
