@@ -641,8 +641,6 @@ spec:
                     volumeMounts:
                       - mountPath: /opt/app-root/src
                         name: granite-your-rock-solid-ai-assistant
-                      - mountPath: /opt/app-root/runtimes
-                        name: elyra-dsp-details
                       - mountPath: /dev/shm
                         name: shm
                       - mountPath: /etc/pki/tls/custom-certs/ca-bundle.crt
@@ -719,9 +717,6 @@ spec:
                   - name: granite-your-rock-solid-ai-assistant
                     persistentVolumeClaim:
                       claimName: granite-your-rock-solid-ai-assistant
-                  - name: elyra-dsp-details
-                    secret:
-                      secretName: ds-pipeline-config
                   - emptyDir:
                       medium: Memory
                     name: shm
