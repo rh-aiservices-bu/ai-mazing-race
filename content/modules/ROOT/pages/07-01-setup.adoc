@@ -1,6 +1,10 @@
 = Setup
 include::_attributes.adoc[]
 
+Sweden is in dire need of your help!  
+The world famous company OMEA (Olle's Meatball and Eventual Arrangements, name still TBD) recently started adopting AI to set prices to the wares they sell.  
+However, they soon noticed that the AI occasionally gave some items far too much discount, to the point where the items were for free or even had a negative price.  
+OMEA has already built the infrastructure to make the stores dependant on this AI, so it's not as easy as just disabling it.  
 
-
-
+Because of how big part of Swedens economy OMEA is, this is risking the financial collapse of the entire country, which would result in a dire lack of high-quality meatballs to the rest of the world.  
+Help OMEA and Sweden by figuring out what goes wrong with the model and how it can be improved.  

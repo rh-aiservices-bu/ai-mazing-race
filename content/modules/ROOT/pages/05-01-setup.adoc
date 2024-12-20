@@ -1,6 +1,2 @@
 = Setup
 include::_attributes.adoc[]
-
-
-
-
