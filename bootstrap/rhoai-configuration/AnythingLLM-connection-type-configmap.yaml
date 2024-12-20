@@ -57,10 +57,10 @@ data:
       "name": "Token Context Window",
       "envVar": "GENERIC_OPEN_AI_MODEL_TOKEN_LIMIT",
       "properties": {
-        "defaultValue": 4096,
+        "defaultValue": 50000,
         "unit": "Tokens",
-        "min": 1,
-        "max": 4096
+        "min": 10,
+        "max": 100000
       }
     },
     {
@@ -70,8 +70,8 @@ data:
       "properties": {
         "unit": "Tokens",
         "min": 1,
-        "max": 2048,
-        "defaultValue": 1024
+        "max": 6144,
+        "defaultValue": 4096
       }
     },
     {
