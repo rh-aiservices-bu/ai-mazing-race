@@ -2,7 +2,7 @@
 include::_attributes.adoc[]
 
 Start by going to your Data Science project and create a new workbench with these settings:
-- Image: Trusty
+- Image: TrustyAI
 - Size: Small
 Feel free to pick any name for the workbench.
 
