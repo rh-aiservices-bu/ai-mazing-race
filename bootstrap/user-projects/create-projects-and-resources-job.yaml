@@ -710,7 +710,7 @@ spec:
                       - '--upstream-ca=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt'
                       - '--email-domain=*'
                       - '--skip-provider-button'
-                      - '--openshift-sar={"verb":"get","resource":"notebooks","resourceAPIGroup":"kubeflow.org","resourceName":"granite-workbench","namespace":"$(NAMESPACE)"}'
+                      - '--openshift-sar={"verb":"get","resource":"notebooks","resourceAPIGroup":"kubeflow.org","resourceName":"granite-workbench","namespace":"$NAMESPACE"}'
                       - '--logout-url=https://rhods-dashboard-redhat-ods-applications.apps.cluster-96q92.96q92.sandbox393.opentlc.com/projects/user1?notebookLogout=granite-workbench'
                 enableServiceLinks: false
                 serviceAccountName: $WORKBENCH_NAME
