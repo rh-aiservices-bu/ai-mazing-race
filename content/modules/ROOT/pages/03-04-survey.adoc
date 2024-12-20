@@ -1,4 +1,4 @@
 = Survey
 include::_attributes.adoc[]
 
-== End of alloted time
+== End of allotted time

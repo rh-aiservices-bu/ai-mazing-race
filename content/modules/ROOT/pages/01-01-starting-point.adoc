@@ -13,7 +13,7 @@ Oh, and by the way, even if you succeed, you'll mostly get thanks and pats on th
 
 == The **spirit** of the exercise
 
-Each scenario will be time-constrained, and it's likely to be difficult to complete all the tasks during the alloted time.
+Each scenario will be time-constrained, and it's likely to be difficult to complete all the tasks during the allotted time.
 
 You need to act as if this were a relay race. As if after the allotted time, you had to pass the baton to another team.
 
