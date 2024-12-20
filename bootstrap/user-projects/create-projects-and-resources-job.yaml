@@ -212,9 +212,10 @@ spec:
                       DISABLE_TELEMETRY: dHJ1ZQ==
                       EMBEDDING_ENGINE: bmF0aXZl
                       GENERIC_OPEN_AI_API_KEY: NjFlMWMxZjY4ZWRlZWUyZmY5NzRhMDMzZTk5MzVlMDQ=
-                      GENERIC_OPEN_AI_BASE_PATH: aHR0cHM6Ly9ncmFuaXRlLTMtOGItaW5zdHJ1Y3QtbWFhcy1hcGljYXN0LXByb2R1Y3Rpb24uYXBwcy5wcm9kLnJob2FpLnJoLWFpc2VydmljZXMtYnUuY29tOjQ0My92MQ==
+                      GENERIC_OPEN_AI_BASE_PATH: aHR0cHM6Ly9ncmFuaXRlLTMtOGItaW5zdHJ1Y3QtbWFhcy1hcGljYXN0LXByb2R1Y3Rpb24uYXBwcy5wcm9kLnJob2FpLnJoLWFpc2VydmljZXMtYnUuY29tOjQ0Mw==
                       GENERIC_OPEN_AI_MAX_TOKENS: NTAwMA==
                       GENERIC_OPEN_AI_MODEL_PREF: Z3Jhbml0ZS0zLThiLWluc3RydWN0
+                      LLM_PROVIDER: Z2VuZXJpYy1vcGVuYWk=
                       GENERIC_OPEN_AI_MODEL_TOKEN_LIMIT: MTAwMDAw
                       VECTOR_DB: bGFuY2VkYg==
                     type: Opaque

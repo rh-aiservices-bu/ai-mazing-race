@@ -25,7 +25,9 @@ data:
       "name": "LLM Provider Type",
       "envVar": "LLM_PROVIDER",
       "required": false,
-      "properties": {}
+      "properties": {
+        "defaultValue": "generic-"
+      }
     },
     {
       "type": "short-text",
@@ -57,10 +59,10 @@ data:
       "name": "Token Context Window",
       "envVar": "GENERIC_OPEN_AI_MODEL_TOKEN_LIMIT",
       "properties": {
-        "defaultValue": 50000,
+        "defaultValue": 4096,
         "unit": "Tokens",
         "min": 1,
-        "max": 100000
+        "max": 4096
       }
     },
     {
@@ -70,8 +72,8 @@ data:
       "properties": {
         "unit": "Tokens",
         "min": 1,
-        "max": 6144,
-        "defaultValue": 4096
+        "max": 2048,
+        "defaultValue": 2048
       }
     },
     {
