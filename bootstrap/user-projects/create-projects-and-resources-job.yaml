@@ -547,6 +547,7 @@ spec:
               volume.beta.kubernetes.io/storage-provisioner: ebs.csi.aws.com
               volume.kubernetes.io/storage-provisioner: ebs.csi.aws.com
             name: granite-your-rock-solid-ai-assistant
+            namespace: $USER_PROJECT
             labels:
               opendatahub.io/dashboard: 'true'
           spec:
@@ -571,6 +572,7 @@ spec:
               notebooks.opendatahub.io/last-size-selection: Small
               opendatahub.io/username: $USER_NAME
             name: granite-workbench
+            namespace: $USER_PROJECT
             labels:
               app: granite-workbench
               opendatahub.io/dashboard: 'true'
