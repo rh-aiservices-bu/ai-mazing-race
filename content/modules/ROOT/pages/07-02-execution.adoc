@@ -10,9 +10,12 @@ After that's done, clone this repository into the workbench: [https://github.com
 
 Go to the folder `lab-materials/07` where you will the model and code to help you analyze and build new ones.  
 
-== Task 1 - Understand what's wrong
+== Task 1 - Understand what's wrong  
+Run through the code in notebooks 1 to 4 and see what might be wrong with the model.  
+How does it perform on the evaluation, are there any features that seem to be suspiciously impactful?  
 
-== Task 2 - Propose and test changes
-
+== Task 2 - Propose and test changes  
+After you have made some thoughts on what might be wrong, go back to the first notebook and change what features are used and how the data is processed.  
+The goal is to get as small of an error as possible while also having no negative prices (they are typically bad for business).  
 
 
