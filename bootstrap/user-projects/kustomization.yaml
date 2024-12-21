@@ -9,6 +9,7 @@ commonLabels:
   component: projects
 
 resources:
+  - rbac-presync-monitoring.yaml
   # presync
   - presync-rhoai-ready.yaml
   - presync-minio.yaml
