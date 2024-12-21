@@ -6,7 +6,7 @@ commonLabels:
   component: rhoai-configuration
 
 resources:
-  - rbac-presync-monitoring.yaml  ## wave 0
+  # - rbac-presync-monitoring.yaml  ## wave 0
   - odhdashboardconfig.yaml       ## wave 1
   - AnythingLLM-connection-type-configmap.yaml ## wave 1
   - workbench-imagestream.yaml    ## wave 2
