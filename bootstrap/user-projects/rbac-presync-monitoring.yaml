@@ -1,4 +1,35 @@
 ---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: image-puller-tools
+  namespace: rhods-notebooks
+  labels:
+    k8s-app: image-puller
+  annotations:
+    # argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/hook: PreSync
+spec:
+  selector:
+    matchLabels:
+      name: image-puller
+  template:
+    metadata:
+      labels:
+        name: image-puller
+    spec:
+      containers:
+      - name: tools
+        image: image-registry.openshift-image-registry.svc:5000/openshift/tools:latest
+        command: ["tail"]
+        args: ["-f", "/dev/null"]
+        resources:
+          limits:
+            memory: 20Mi
+          requests:
+            cpu: 10m
+            memory: 10Mi
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -47,34 +78,3 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: presync-monitoring-cluster-role
-# ---
-# apiVersion: apps/v1
-# kind: DaemonSet
-# metadata:
-#   name: image-puller-tools
-#   namespace: rhods-notebooks
-#   labels:
-#     k8s-app: image-puller
-#   annotations:
-#     # argocd.argoproj.io/sync-wave: "2"
-#     argocd.argoproj.io/hook: PreSync
-# spec:
-#   selector:
-#     matchLabels:
-#       name: image-puller
-#   template:
-#     metadata:
-#       labels:
-#         name: image-puller
-#     spec:
-#       containers:
-#       - name: tools
-#         image: image-registry.openshift-image-registry.svc:5000/openshift/tools:latest
-#         command: ["tail"]
-#         args: ["-f", "/dev/null"]
-#         resources:
-#           limits:
-#             memory: 20Mi
-#           requests:
-#             cpu: 10m
-#             memory: 10Mi
