@@ -12,7 +12,7 @@ include::_attributes.adoc[]
 
 * The situation is critical, eh!
 * There has been a surge of wildfires in Canada, menacing to destroy the entire country.
-* It has gotten so bad the the Prime Minister of Canada, Mr Hortons, has declared a "War on fire"
+* It has gotten so bad the the Prime Minister of Canada, Mr Timothy Hortons, has declared a "War on fire"
 * As a result, the National Igloo has allocated 1 Trillion Canadian Dollars (~ 300 USD) to the effort
 * The first step is to asses the extent of the current situation.
 ** To do so, Canada has already launched operation MAPLE (Monitoring Aerial Photography Land Evaluation)
@@ -22,8 +22,8 @@ include::_attributes.adoc[]
 
 == Mission
 
-* As part of your instruction set, you will find information on how to deploy and image detection model on Red Hat OpenShift AI.
-* This model has already been trained, and we assume it to be of good quality. (Also, it's urgent, and that's all we have)
+* As part of your instruction set, you will find information on how to deploy an image detection model on Red Hat OpenShift AI.
+* This model has already been trained, and we assume it to be of good quality. (Also, it's urgent, and that's all we have, so we can't be picky)
 * There are however concerns about performance aspect of this model...
 ** Given the large number of robotic geese deployed, and the number of pictures that will be sent in, we need some assurance that the images can be processed in real time or as close to it as we can
 * Your specific mission:

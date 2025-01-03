@@ -7,48 +7,35 @@ include::_attributes.adoc[]
 .Click to reveal Hint #1
 [%collapsible]
 ====
-Think about the problem a bit harder
+Well, behind the scenes, we are using some "serverless" features for model serving, so may be it would be faster with ZERO replicas of the model... What do you think?
 ====
 
 == Hint #2
+.Click to reveal Hint #2
+[%collapsible]
+====
+Ha, the previous hint was indeed a trap. If you scale down the replicas to zero for the served model, it's the action of sending a request to the model that wakes it up. Did you measure the time it takes to make a prediction when that also triggers the model restart? And then, did you measure how long it takes to get the prediction after the model is properly started?
+
+Ok, so ... if reducing the number of replicas from 1 down to zero made things worse, maybe doing the opposite would make things better? (Hint hint!)
+====
 
 
-== Hint #3 (Complete solution)
+== Hint #3
 
 .Click to reveal Hint #3
 [%collapsible]
 ====
+Another approach could be to change the size of the container serving the model. However, is bigger always necessarily better? Go back down to a single replica, and change the memory and CPU requests and limits before re-running some of the tests.
 
-GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
-
-`git clone https://github.com/rh-aiservices-bu/ai-mazing-race.git`
-
-* Create a project (widfire-{user})
-* small - pytorch - wb, with 50 GB of disk.
-
-
-starting point: nb used for training:
-https://www.kaggle.com/code/dima806/wildfire-image-detection-vit
-
-wildfire dataset:
-https://www.kaggle.com/datasets/elmadafri/the-wildfire-dataset
-and
-<s3>
-
-HF:
-orig: https://huggingface.co/dima806/wildfire_types_image_detection
-mine:
-
-
+If performance improves, by how much? If performance is unchanged, over-using resources will increase costs without improving throughput. Is that desirable?
 
 ====
 
-serve model
-measure the responsetime
-send 500 requests
+== Hint #4
 
-- increase CPU
-- increase pods
-- add a GPU
-- modelmesh - or kserve?
--
+.Click to reveal Hint #4
+[%collapsible]
+====
+If we really can't get the prediction performance to get below a certain threshold (say 0.5s) using CPU, then maybe we do need a GPU. But since we don't have any in this cluster, it's a moot point.
+
+====
