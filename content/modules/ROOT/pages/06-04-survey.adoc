@@ -1,6 +1,10 @@
 = Survey
 include::_attributes.adoc[]
 
+Time's up!
 
+Now, head over to our github discussion, and paste your notes in reply to the thread:
+
+link:https://github.com/rh-aiservices-bu/ai-mazing-race/discussions/11[Github Discussion / 06 - Canada^]
 
 

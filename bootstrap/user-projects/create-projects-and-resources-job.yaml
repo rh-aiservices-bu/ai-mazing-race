@@ -69,6 +69,7 @@ spec:
             annotations:
               openshift.io/description: ''
               openshift.io/display-name: $USER_PROJECT
+              openshift.io/requester: auto-provisioner
             labels:
               kubernetes.io/metadata.name: $USER_PROJECT
               modelmesh-enabled: 'false'

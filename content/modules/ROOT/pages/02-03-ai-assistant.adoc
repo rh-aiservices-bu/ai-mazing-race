@@ -1,0 +1,47 @@
+= Your own private AI Assistant
+include::_attributes.adoc[]
+
+It's 2025 after all. You thought we'd leave you stranded with just your own brain to work with? Of course not.
+
+Now, you can obviously google things, and you could also ChatGPT things, but these scenarios are mission critical, and we can't afford to leak any sensitive information about our scenarios! While **you** may have top-security level clearance, hosted services do not.
+
+Therefore, we've provisioned for you an AI Assistant, running in your private project, and backed by OUR private version of Granite 3.1! You're welcome. But be careful: With Granite power, comes Granite responsibilities.
+
+== Accessing your Assistant
+
+1. From the main dashboard of OpenShift AI (https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/[https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/,window=_blank]) choose your private project (`{user}`)
+2. In that project, click on the link to access the Granite Assistant:
++
+[.bordershadow]
+image::02/02-02-assistant-link.png[]
+3. When prompted, authenticate.
+4. Once inside the AnythingLLM interface, create a new Workspace called `Granite`:
++
+[.bordershadow]
+image::02/02-02-new-workspace.png[]
+5. Configure the workspace with a simpler prompt: `Answer the question as accurately as you are able to`
++
+[.bordershadow]
+image::02/02-02-change-prompt.png[]
+6. Confirm it's properly configured by asking it a random question:
++
+[.bordershadow]
+image::02/02-02-confirm.png[]
+
+== Intended uses
+
+We can't think of all the things YOU might want to use this for.
+But we suggest the following might be ways of leveraging the AI assistant:
+
+* explaining terms and concepts that may not be clear
+* help with code analysis, explanation, modifications
+* error and log messages analysis
+* support with writing and developing notes
+* brainstorming ideas, theories, and tests
+
+// image::2024-12-20-23-02-05.png[]
+// image::2024-12-20-23-02-34.png[]
+
+// image::2024-12-20-23-03-00.png[]
+// image::2024-12-20-23-04-00.png[]
+

@@ -10,6 +10,7 @@ resources:
   - odhdashboardconfig.yaml       ## wave 1
   - AnythingLLM-connection-type-configmap.yaml ## wave 1
   - workbench-imagestream.yaml    ## wave 2
+  - user-worload-monitoring.yaml
   # - presync.yaml
   # # wave 0
   # - gp3-remove-default.yaml
