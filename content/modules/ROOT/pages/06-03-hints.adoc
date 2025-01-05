@@ -48,6 +48,6 @@ If we really can't get the prediction performance to get below a certain thresho
 What other bottlenecks could be slowing us down, and how would you test these theories?
 * Maybe the network is now too slow and requests can't come in fast enough?
 * Maybe using the route is adding network hops and slowing things down?
-* Maybe the client itself is unable to deliver the amount of parralelism required. How could we change that? What tools mayb be better suited than raw python coding?
+* Maybe the client itself is unable to deliver the amount of parallelism required. How could we change that? What tools may be better suited than raw python coding?
 *
 ====
