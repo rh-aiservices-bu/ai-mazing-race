@@ -13,25 +13,7 @@ Each time you run the cells, your previous experiment results will disappear lik
 .Click to reveal Hint #1
 [%collapsible]
 ====
-* To deploy:
-- Model deployment name: baklava
-- Serving runtime: OpenVino Model Server
-- Model framework: onnx - 1
-- Model server replicas: 1
-- Compute resources per replica: Small
-- Model route:
-
-    > Select Make deployed models available through an external route
-    > Uncheck the Require token authentication for now
-
-- Model location:
-
-    > Select from existing data connection and pick `models`
-    > Path: `models/<your-version>/baklava`
-
-..and hit Deploy!
-
-Then use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
+Does your workbench know where your bucket is? Make sure they’re properly _connected_.
 ====
 
 == Hint #3 (Complete solution)
@@ -39,5 +21,15 @@ Then use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava 
 .Click to reveal Hint #3
 [%collapsible]
 ====
+To deploy use the following options:
 
+- Model deployment name: baklava
+- Serving runtime: `OpenVino Model Server``
+- Model framework: `onnx - 1``
+- Model location:
+
+    > Select from existing data connection and pick `models`
+    > Path: `models/<your-version>/baklava`
+
+Then, you can use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
 ====
