@@ -1,6 +1,10 @@
 = Execution
 include::_attributes.adoc[]
 
+In the folder `lab-materials/05`, you'll find a Notebook file: `1-experiment_train_baklava.ipynb`, along with data covering the past ten years of baklava consumption across regions in Türkiye.
 
+The notebook contains the model code with parameters ready for you to tweak and experiment with, alongside with helpful explanations, so take the time to read them carefully.
 
+Once you've identified the best settings for your model within three experiments, deploy the best-performing one! 
 
+Good luck, and happy experimenting!

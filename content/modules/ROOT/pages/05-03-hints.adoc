@@ -1,5 +1,43 @@
 = Hints
 include::_attributes.adoc[]
 
+== Hint #1
 
+.Click to reveal Hint #1
+[%collapsible]
+====
+Each time you run the cells, your previous experiment results will disappear like crumbs on a plate. If you want to revisit your results to compare, make sure to save your results before starting a new experiment!
+====
 
+== Hint #2
+.Click to reveal Hint #1
+[%collapsible]
+====
+* To deploy:
+- Model deployment name: baklava
+- Serving runtime: OpenVino Model Server
+- Model framework: onnx - 1
+- Model server replicas: 1
+- Compute resources per replica: Small
+- Model route:
+
+    > Select Make deployed models available through an external route
+    > Uncheck the Require token authentication for now
+
+- Model location:
+
+    > Select from existing data connection and pick `models`
+    > Path: `models/<your-version>/baklava`
+
+..and hit Deploy!
+
+Then use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
+====
+
+== Hint #3 (Complete solution)
+
+.Click to reveal Hint #3
+[%collapsible]
+====
+
+====
