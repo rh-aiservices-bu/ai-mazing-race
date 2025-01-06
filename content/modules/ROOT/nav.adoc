@@ -18,7 +18,7 @@
 ** xref:04-03-hints.adoc[4.3 Hints]
 ** xref:04-04-survey.adoc[4.4 Survey]
 
-* 5. Scenario Türkiye 🇹🇷
+* 5. Scenario Türkiye 🇹🇷🍬
 ** xref:05-01-setup.adoc[5.1 Setup]
 ** xref:05-02-execution.adoc[5.2 Execution]
 ** xref:05-03-hints.adoc[5.3 Hints]
