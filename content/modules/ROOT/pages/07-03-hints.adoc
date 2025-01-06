@@ -2,4 +2,16 @@
 include::_attributes.adoc[]
 
 
+== Hint #1
 
+.Click to reveal Hint #1
+[%collapsible]
+====
+Try removing some features that SHAP says is dragging down the price, but be careful with removing the categories as they also seem to help the prediction in some cases.
+====
+
+== Hint #2
+[%collapsible]
+====
+Remove the `discounted` and `discount_amount` features, and stratify the `train_test_split` dataset to make sure that we get a nice distribution of training and testing features.
+====

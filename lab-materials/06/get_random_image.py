@@ -1,9 +1,9 @@
 import os
 import random
 
-def get_random_image(path: str = "/opt/app-root/src/ai-mazing-race/lab-materials/06/04-wildfire-sample") -> str:
+def get_random_image(path: str = "/opt/app-root/src/ai-mazing-race/lab-materials/06/06-wildfire-sample") -> str:
     """
-    Search through all subfolders of the specified path for image files, 
+    Search through all subfolders of the specified path for image files,
     pick one at random, and return its absolute path.
 
     Args:
@@ -14,7 +14,7 @@ def get_random_image(path: str = "/opt/app-root/src/ai-mazing-race/lab-materials
     """
     # Define valid image file extensions
     valid_extensions = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff"}
-    
+
     # List to hold all image file paths
     image_files = []
 

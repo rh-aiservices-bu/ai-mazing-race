@@ -13,7 +13,7 @@ Oh, and by the way, even if you succeed, you'll mostly get thanks and pats on th
 
 == The **spirit** of the exercise
 
-Each scenario will be time-constrained, and it's likely to be difficult to complete all the tasks during the alloted time.
+Each scenario will be time-constrained, and it's likely to be difficult to complete all the tasks during the allotted time.
 
 You need to act as if this were a relay race. As if after the allotted time, you had to pass the baton to another team.
 
@@ -25,8 +25,8 @@ Make sure that you keep clear notes, in plain text or in Markdown, ready to subm
 
 == Working environment
 
-* A shared Red Hat OpenShift AI cluster is provider for all.
-* Each attendee has access to a regular user account.
+* A shared Red Hat OpenShift AI cluster is provided.
+* Each attendee has access to a regular **user** account.
 * Only the moderators have access to a Cluster Admin and RHOAI Admin accounts, and they will only use them in DIRE circumstances.
 * The environment has FINITE resources.
 * The environments does not have any GPUs available, so no need to ask, it's just not there.
