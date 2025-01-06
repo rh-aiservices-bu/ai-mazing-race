@@ -18,4 +18,4 @@ We invite you to join our effort to optimize this model. Your task is to:
 - **Deploy the Best Model**: Once you've identified the most performant model, deploy it to your environment.
 - **Test Your Model**: Use the provided notebook to make predictions and evaluate the deployed model's performance.
 
-By making your experiments and storing your findings, you'll be part of a collaborative effort to make the most of this sweet data science challenge. 
+By making your experiments and storing your findings, you'll be part of a collaborative effort to make the most of this sweet data science challenge.

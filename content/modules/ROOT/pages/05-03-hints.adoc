@@ -13,14 +13,6 @@ Each time you run the cells, your previous experiment results will disappear lik
 .Click to reveal Hint #1
 [%collapsible]
 ====
-Your Notebook is a great place to train and experiment, but is it enough to deploy your best model on OpenShift AI? Think about where your model needs to be stored for deployment to access it!
-====
-
-== Hint #3 (Complete solution)
-
-.Click to reveal Hint #3
-[%collapsible]
-====
 * To deploy:
 - Model deployment name: baklava
 - Serving runtime: OpenVino Model Server
@@ -40,4 +32,12 @@ Your Notebook is a great place to train and experiment, but is it enough to depl
 ..and hit Deploy!
 
 Then use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
+====
+
+== Hint #3 (Complete solution)
+
+.Click to reveal Hint #3
+[%collapsible]
+====
+
 ====

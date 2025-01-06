@@ -3,12 +3,8 @@ include::_attributes.adoc[]
 
 In the folder `lab-materials/05`, you'll find a Notebook file: `1-experiment_train_baklava.ipynb`, along with data covering the past ten years of baklava consumption across regions in Türkiye.
 
-The notebook contains the model code with parameters ready for you to tweak and experiment with. Note: every time you run the cells, the results of the previous experiment will be overwritten. To avoid losing your work, be sure to save your experiments before starting a new one!
+The notebook contains the model code with parameters ready for you to tweak and experiment with, alongside with helpful explanations, so take the time to read them carefully.
 
-You have the flexibility to store information about your experiments and model in the Model Registry using either the UI or the SDK—it's entirely up to you.
-
-The notebook includes helpful explanations, so take the time to read them carefully.
-
-Once you've identified the best settings for your model within five experiments, deploy the best-performing one! 
+Once you've identified the best settings for your model within three experiments, deploy the best-performing one! 
 
 Good luck, and happy experimenting!
