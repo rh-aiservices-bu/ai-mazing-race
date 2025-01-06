@@ -126,6 +126,8 @@ html
 http
 https
 huggingface
+hyperparameters
+Hyperparameters
 ibm
 ic
 imagesdir
@@ -209,10 +211,12 @@ OpenShift
 openShiftOAuth
 OpenSift
 opentlc
+OpenVino
 OpenVINO
 patternfly
 Patternfly
 PatternFly
+performant
 PersistantStorageClaims
 PersistentVolumeClaim
 PersistentVolumeClaims
@@ -299,6 +303,7 @@ TypeScript
 UAT
 UI
 un
+understocking
 unopinionated
 url
 USD
