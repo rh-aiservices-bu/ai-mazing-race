@@ -6,7 +6,7 @@ include::_attributes.adoc[]
 .Click to reveal Hint #1
 [%collapsible]
 ====
-Each time you run the cells, your previous experiment results will disappear like crumbs on a plate. If you want to revisit your results to compare, make sure to save your results before starting a new experiment!
+Each time you run the cells, your previous experiment results will disappear like baklava crumbs on a plate. If you want to revisit your results to compare, make sure to save your results before starting a new experiment!
 ====
 
 == Hint #2
