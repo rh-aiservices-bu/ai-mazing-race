@@ -23,10 +23,9 @@ def undummify(df, prefix_sep="_"):
     return undummified_df
 
 def mse(model, test_features, test_labels, target, scalers):    
-    print("\n Evaluate the new model against the test set:")
-    result = model.evaluate(x = test_features, y = test_labels)[1]
+    result = model.evaluate(x = test_features, y = test_labels, verbose=0)[1]
     unscaled_result = scalers[target].inverse_transform([[result]])[0][0]
-    print(f"The model has an MSE of {unscaled_result} ({result} when scaled) on the test data.")
+    print(f"The model has a MSE of {unscaled_result} ({result} when scaled) on the test data.")
 
 def below_zero(model, test_data, test_features, test_labels, target, scalers):
     # Get the predictions
