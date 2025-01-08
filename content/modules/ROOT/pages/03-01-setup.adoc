@@ -8,7 +8,7 @@ include::_attributes.adoc[]
 * We can all agree that you can't spell Spain without AI!
 * The ASSA (Amazing Spanish Space Agency) urgently requires your help!
 ** It is facing a critical situation, and needs you to save the day!
-* A brand-new telescope called CAIx at the GranTeCan observatory (one of the link:https://en.wikipedia.org/wiki/Gran_Telescopio_Canarias[largest in the world]) has recently been launched.
+* A brand-new telescope called GranTeCan at the GranTeCan observatory (one of the link:https://en.wikipedia.org/wiki/Gran_Telescopio_Canarias[largest in the world]) has recently been launched.
 // * That telescope has captured hundreds of terabytes of data, but ASSA cannot process all of it in time.
 * In order to choose which star system Spain should colonize first, they have to be classified properly, and an effort was made to create a model that could categorize stars based on their respective characteristics.
 * Good progress had been made, but it was on an data science intern's laptop, and sadly, a spilled Sangria was no match for the laptop.
@@ -35,6 +35,6 @@ Your specific tasks (in no particular order) are as follows:
 
 * Confirm that precision and accuracy levels reach 98% or higher
 
-* Implement an automated solution for the notebook to daily, at 02:00 AM exactly, on spanish time
+* Implement an automated solution for the notebook to daily, at 02:00 AM exactly, on spanish time (CET)
 
 Once done, document your findings and share them with the ASSA team so that others following in your footsteps have an easier time
