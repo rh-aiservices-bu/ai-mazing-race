@@ -14,5 +14,5 @@ When you change the features, the datapoints that predict below zero might also 
 == Hint #2
 [%collapsible]
 ====
-Remove the `discounted` and `discount_amount` features, and stratify the `train_test_split` dataset to make sure that we get a nice distribution of training and testing features.
+Remove the `discounted` and `discount_amount` features.
 ====
