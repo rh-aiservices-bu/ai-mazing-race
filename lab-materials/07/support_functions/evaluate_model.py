@@ -41,23 +41,25 @@ def below_zero(model, test_data, test_features, test_labels, target, scalers):
 
     # Reverse the one-hot encoding/dummyfying
     categores = [col for col in predicted_df.columns if "category" in col]
-    concat_categories = undummify(predicted_df[categores])
-    predicted_df = predicted_df.drop(categores, axis=1)
-    predicted_df["category"] = concat_categories
+    if categores:
+        concat_categories = undummify(predicted_df[categores])
+        predicted_df = predicted_df.drop(categores, axis=1)
+        predicted_df["category"] = concat_categories
 
     return predicted_df, predicted_df[predicted_df["price"]<0]
 
 def worst_prediction(predicted_df, test_labels, target, scalers):
     unscaled_labels = scalers[target].inverse_transform(test_labels)
     worst_prediction = np.argmax(np.abs(predicted_df[target].values.reshape(-1, 1) - unscaled_labels))
-    predicted_df.iloc[[worst_prediction]]
+    wort_pred_id = predicted_df.index[worst_prediction]
+    print(f"Worst prediction has id: {wort_pred_id}")
 
     comparison = {
         "prediction": predicted_df.reset_index().iloc[worst_prediction][target],
         "target": unscaled_labels[worst_prediction][0],
-        "error": predicted_df.reset_index().iloc[worst_prediction][target] - unscaled_labels[worst_prediction][0]
+        "error": abs(predicted_df.reset_index().iloc[worst_prediction][target] - unscaled_labels[worst_prediction][0])
     }
-    return pd.DataFrame([comparison])
+    return pd.DataFrame([comparison], index=[wort_pred_id])
 
 def model_evaluation(model_name, target):
     model = keras.saving.load_model(f"{model_name}/model.keras")
@@ -77,5 +79,3 @@ def model_evaluation(model_name, target):
     worst_df = worst_prediction(predicted_df, test_labels, target, scalers)
 
     return worst_df, below_zero_df
-    
-    

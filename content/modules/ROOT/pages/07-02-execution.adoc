@@ -16,6 +16,11 @@ How does it perform on the evaluation, are there any features that seem to be su
 
 == Task 2 - Propose and test changes  
 After you have made some thoughts on what might be wrong, go back to the start of the notebook and change what features are used and how the data is processed.  
-The goal is to get as small of an error as possible while also having no negative prices (they are typically bad for business).  
+The goal is to get as small of an error as possible while also having no/few negative prices (they are typically bad for business).  
+You can change the datapoint you are analyzing with Counterfactual and SHAP by changing the value of `DATAPOINT`, do this to test with both points that predict below 0 and the worst prediction.  
 
+If you re-run the notebook, make sure to restart the kernel so that no results from the previous session are introduced in your new one.  
+One very easy way to do this is to click this fast-forward button:  
+[.bordershadow]
+image::07/run-all-button.png[]
 
