@@ -9,8 +9,8 @@ In the folder `lab-materials/04` you will find a Notebook file: `04-decrypt.ipyn
 
 == Task 2 - The environment
 
-Now that you know what you need to retrieve the message, you must create an environment where the President can decrypt the message by himself. Remember, the President will only be able to use the mouse to launch a Workbench, open a Notebook, and run a cell. So all batteries must be included!
+Now that you know what you need to retrieve the message, you must create an environment where the government can decrypt the message by themselves. Remember, the government will only be able to use the mouse to launch a Workbench, open a Notebook, and run a cell. You really can't trust the government to install software on the fly.
 
 == Task 3 - Setting everything up
 
-Prepare your project to allow the President to decrypt the message. Just remember you are only a user in this environment, not an admin. So this may complicate things a bit...
+Prepare your project to allow the government to decrypt the message. Just remember you are only a user in this environment, not an admin. So this may complicate things a bit...
