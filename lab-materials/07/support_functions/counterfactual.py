@@ -21,9 +21,8 @@ def counterfactual(model_name, target, datapoint):
     strange_prediction
 
     def pred(x):
-        prediction = keras_model.predict(x)
+        prediction = keras_model.predict(x, verbose=0)
         unscaled_pred = scalers[target].inverse_transform(prediction)[0][0]
-        print(unscaled_pred)
         if unscaled_pred >= LABEL_THRESHOLD:
             pred = {target: True}
         else:
@@ -47,6 +46,7 @@ def counterfactual(model_name, target, datapoint):
 
     # Do the counterfactual analysis
     STEPS=50
+    print("Running the Counterfactual analysis, this may take a moment...")
     explainer = CounterfactualExplainer(steps=STEPS)
     explanation = explainer.explain(inputs=strange_prediction, goal=goal, model=model, feature_domains=domains)
 

@@ -15,7 +15,7 @@ def shap(model_name, target, datapoint):
     strange_prediction = test_data.loc[[datapoint]].drop(target, axis=1)
 
     def pred(x):
-        prediction = keras_model.predict(x)
+        prediction = keras_model.predict(x, verbose=0)
         return pd.DataFrame(prediction, columns=[target])
 
     trustyai_model = Model(pred, output_names=[target])
@@ -45,6 +45,7 @@ def shap(model_name, target, datapoint):
     bg_dataset = bg_dataset.reset_index(drop=True).drop(target, axis=1)
 
     # Now we can do our SHAP analysis!
+    print("Running the SHAP analysis, this may take a moment...")
     explainer = SHAPExplainer(background=bg_dataset, seed=42)
     explanations = explainer.explain(inputs=strange_prediction,
                              outputs=prediction,
