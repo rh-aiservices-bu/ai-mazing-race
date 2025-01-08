@@ -1,29 +1,40 @@
-= Setup
+= Briefing
 include::_attributes.adoc[]
 
 // Stars Classification in Spain
 
-* The ASA (Amazing Space Agency) urgently requires your help! We are facing a critical situation, and only you and your team can save the day!
-* A brand-new telescope called CAIx at the GranTeCan observatory (one of the link:https://en.wikipedia.org/wiki/Gran_Telescopio_Canarias[largest in the world]) has been launched.
-* The CAIx telescope has captured hundreds of terabytes of data, but ASA cannot process all of it in time.
+== Situation
+
+* We can all agree that you can't spell Spain without AI!
+* The ASSA (Amazing Spanish Space Agency) urgently requires your help!
+** It is facing a critical situation, and needs you to save the day!
+* A brand-new telescope called CAIx at the GranTeCan observatory (one of the link:https://en.wikipedia.org/wiki/Gran_Telescopio_Canarias[largest in the world]) has recently been launched.
+// * That telescope has captured hundreds of terabytes of data, but ASSA cannot process all of it in time.
+* In order to choose which star system Spain should colonize first, they have to be classified properly, and an effort was made to create a model that could categorize stars based on their respective characteristics.
+* Good progress had been made, but it was on an data science intern's laptop, and sadly, a spilled Sangria was no match for the laptop.
+
+== Mission
+
 * The current challenges are as follows:
-** All the experiments and notebooks required to process the data were stored on an old VM, which was accidentally deleted by an intern.
-** Only one repository belonging to a former Data Scientist was salvaged from our link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/03[Git repository], but it contains multiple errors, and the Data Scientist left the Agency four months ago.
-** We only have raw data stored in CSV files, but we lack the expertise to resolve the issue.
+** Some older version of the code were found on an old USB drive, but we know it's definitely not the most recent version we had gotten to.
+** The intern, fearing for their life, went into hiding, and so we can't ask them any question anymore.
+** We NEED to get this working again asap!
+* The salvaged code and data have been stored in this link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/03[Git repository and folder]:
+// ** Only one repository belonging to a former Data Scientist was salvaged from our link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/03[Git repository], but it contains multiple errors, and the Data Scientist left the Agency four months ago.
+// ** We only have raw data stored in CSV files, but we lack the expertise to resolve the issue.
 
-Your specific tasks are as follows:
+Your specific tasks (in no particular order) are as follows:
 
-* Fix the errors in the notebook.
+* Fix the all the **errors** you might find in the notebook code
 
-** Use a workbench image that is suitable for running the notebook.
+* Use a workbench **image** that is best suited for running the notebook
 
-** Investigate which workbench container size is the smallest size that you can run the notebook
+* Investigate which workbench container **size** is the smallest size that you can use
 
-* Resolve the issues with the classification report and confusion matrix.
+// * Resolve the issues with the classification report and confusion matrix.
 
-** Ensure precision and accuracy levels reach 98% or higher.
+* Confirm that precision and accuracy levels reach 98% or higher
 
-* Implement an automated solution for the notebook to run every 24 hours, 
-every day of the week.
+* Implement an automated solution for the notebook to daily, at 02:00 AM exactly, on spanish time
 
-* Share your findings with the ASA team.
+Once done, document your findings and share them with the ASSA team so that others following in your footsteps have an easier time
