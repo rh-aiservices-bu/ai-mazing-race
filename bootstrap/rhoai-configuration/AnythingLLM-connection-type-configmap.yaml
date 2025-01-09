@@ -26,7 +26,7 @@ data:
       "envVar": "LLM_PROVIDER",
       "required": false,
       "properties": {
-        "defaultValue": "generic-"
+        "defaultValue": "generic-openai"
       }
     },
     {
