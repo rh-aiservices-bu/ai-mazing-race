@@ -1,6 +1,10 @@
-= Survey
+= Debrief
 include::_attributes.adoc[]
 
+== End of allotted time
 
+Time's up!
 
+Now, head over to our github discussion, and paste your notes in reply to the thread:
 
+link:https://github.com/rh-aiservices-bu/ai-mazing-race/discussions/22[Github Discussion / 03 - Türkiye^]

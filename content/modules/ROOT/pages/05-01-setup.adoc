@@ -1,21 +1,30 @@
-= Setup
+= Briefing
 include::_attributes.adoc[]
 
-## A Community-Driven Approach to Optimizing Baklava Demand Prediction
+== Situation
 
-Did you know that Istanbul alone devours a staggering 2,000 tons of baklava during the festive season? That's a lot of sweet treats!
+// ## A Community-Driven Approach to Optimizing Baklava Demand Prediction
 
-To ensure that every baklava lover gets their sweet fix, and to meet this incredible demand without overproducing or understocking, we've built a foundational predictive model to forecast demand.
+Did you know that Istanbul alone devours a staggering 2,000 tons of link:https://en.wikipedia.org/wiki/Baklava[baklava^] during the festive season? That's a lot of sweet treats!
 
-But we believe we can do better.
+However, with great treats come great responsibilities!
+
+* Two years ago, the country produced way too much baklava for the demand
+** This nearly bankrupted Türkiye, and greatly affected driving conditions as pallets of baklava had to be stored in the streets.
+* Last year, in an attempt to avoid a repeat, the government massively underestimated the demand, as people rushed to stock up for 10 years. This led to massive disappointments throughout the country.
+* This year, to ensure that every baklava lover gets their sweet fix, and to meet this incredible demand, a predictive AI model was built to predict the demand as accurately as possible! The country's future hangs in the balance!
+
+== Mission
+
+But Türkiye believes it can do better and has hired you to help!
 
 Let's work together to ensure a successful festive season for everyone!
 
-We invite you to join our effort to optimize this model. Your task is to:
+We invite you to join our effort to **optimize** this model further. Your task is to:
 
 - **Experiment with Hyperparameters**: Tweak parameters like `epochs`, `batch_size`, `learning_rate`, and `hidden_layer_units` to find the optimal configuration.
 - **Store Your Experiments**: Record the hyperparameters you used, the resulting model artifacts (the trained model), and evaluation metrics in Model Registry.
 - **Deploy the Best Model**: Once you've identified the most performant model, deploy it to your environment.
 - **Test Your Model**: Use the provided notebook to make predictions and evaluate the deployed model's performance.
 
-By making your experiments and storing your findings, you'll be part of a collaborative effort to make the most of this sweet data science challenge.
+By making your experiments and storing your findings, you'll be part of a collaborative effort to make the most of this sweet AI challenge.
