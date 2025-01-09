@@ -8,7 +8,7 @@ include::_attributes.adoc[]
 .Click to reveal
 [%collapsible]
 ====
-Half of the nickname of the best friend of Merry Brandybuck will help you a lot! 
+Half of the nickname of Merry Brandybuck's best friend will help you a lot!
 ====
 
 === Solution
@@ -26,7 +26,7 @@ So, the solution is to use the `pip` command to install the missing Python packa
 
 == Task 2 - The environment
 
-Not really a hint, but before you loose too much time on digging this out, here is an info we got _from_ a friend: `quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074`
+Not really a hint, but before you lose too much time on digging this out, here is an info we got _from_ a friend: `quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074`
 
 You're welcome!
 
@@ -42,7 +42,7 @@ Think out of the box of the out-of-the-box Workbench images!
 .Click to reveal
 [%collapsible]
 ====
-If only there was something in OpenShift that can **Build** a new container image **Config**... 
+If only there was something in OpenShift that can **Build** a new container image **Config**...
 ====
 
 === Hint #3
@@ -56,7 +56,7 @@ A basic Containerfile is enough to build a new container image. You just need to
 .Click to reveal
 [%collapsible]
 ====
-You need to create a new container image that includes the missing Python package. To do this, a simple Containerfile is enough. 
+You need to create a new container image that includes the missing Python package. To do this, a simple Containerfile is enough.
 
 Here is an example you can use:
 
@@ -118,7 +118,7 @@ Congratulations! You have created a new container image that includes the missin
 
 == Task 3 - Setting everything up
 
-If you were an OpenShift AI admin, it would be easy to import the new container image into the OpenShift AI environment. But you are not. So you need to find a way to use this new container image for the President's workbench...
+If you were an OpenShift AI admin, it would be easy to import the new container image into the OpenShift AI environment. But you are not. So you need to find a way to use this new container image for the government's workbench...
 
 === Hint #1
 .Click to reveal
@@ -150,6 +150,6 @@ Recipe:
 * In the YAML tab, look for the field `image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications...`
 * Replace the value of the `image` field by the ImageStream name you created. Normally it should be: `image-registry.openshift-image-registry.svc:5000/<your_project_name>/ai-mazing-race-stegano`.
 * Get back to OpenShift AI. Your Workbench will show that the Notebook image it is using is **Deleted**. That's not exactly true, it's just not available in the images that OpenShift AI knows about...
-* Start your Workbench. It will use the new container image you have created. You can now directly run the cell! Without typing anything. Mission accomplished, the President sends his thanks!
+* Start your Workbench. It will use the new container image you have created. You can now directly run the cell! Without typing anything. Mission accomplished, the government sends its thanks!
 ====
 

@@ -35,6 +35,6 @@ Your specific tasks (in no particular order) are as follows:
 
 * Confirm that precision and accuracy levels reach 98% or higher
 
-* Implement an automated solution for the notebook to daily, at 02:00 AM exactly, on spanish time (CET)
+* Implement an automated solution for the notebook to daily, at 02:00 AM exactly, on Spanish time (CET)
 
 Once done, document your findings and share them with the ASSA team so that others following in your footsteps have an easier time

@@ -1,14 +1,30 @@
-= Setup
+= Briefing
 include::_attributes.adoc[]
 
-* The situation is critical...
-* The French government has received a picture from one of its spies, as well as a tiny piece of code.
-* They are sure the picture contains a hidden message.
-* However, there is a strike at the Ministry of Defense. So no one had access to the servers ro run this code and decrypt the message hidden in the picture!
+== Situation
+
+* The situation is critical... c'est la vie!
+* For the last 3 weeks, the entire country has been on strike
+** That's usually called "September"
+** What's more unusual is that there are no demonstrations or demands
+** Nobody's come in to work for 3 weeks, but no-one knows why, and no French citizen will explain anything beyond "Don't pretend like you don't know"
+
+The French government has asked the Foreign Legion to figure out the reason for the unprecedented strike.
+
+Because of the sensitivity of the request, the Foreign Legion has sent their answer to the government in a hidden way.
+Yesterday, a homing pigeon with an SD card around its ankle landed at the Élysée. Since then, the French government has tried to figure out the message, to no avail. :-(
+
+And of course, IT is on strike, so the French government needs your services, and fast!
 
 They need your help. As a seasoned OpenShift AI user, you are their only hope...
 
+== Mission
+
+// * The French government has received a picture from one of its spies, as well as a tiny piece of code.
+// * They are sure the picture contains a hidden message.
+// * However, there is a strike at the Ministry of Defense. So no one had access to the servers ro run this code and decrypt the message hidden in the picture!
+
 Here are the two main objectives you need to achieve in this mission:
 
-* Retrieve the message hidden in the picture.
-* Set up a Jupyter Notebook environment that will allow the President to decrypt the message by himself. With a huge constraint: for security reasons, he won't have access to any keyboard. So he will only be able to use the mouse to launch a Workbench, open a Notebook, and run a cell.
+1. Retrieve the message hidden in the picture, by any means necessary, but it has to be do-able from the French government's OpenShift AI environment.
+2. Once that is done, set up a Jupyter Notebook environment that will allow the government to decrypt the message by themselves. With a huge constraint: for security reasons, they won't have access to any keyboard. So they will only be able to use the mouse to launch a Workbench, open a Notebook, and run a cell. They won't be able to modify any code, just execute it.
