@@ -30,7 +30,7 @@
 ** xref:06-03-hints.adoc[6.3 Hints]
 ** xref:06-04-survey.adoc[6.4 Debrief]
 
-* 7. Mission: Sweden 🇸🇪
+* 7. Mission: Sweden 🇸🇪🪑
 ** xref:07-01-setup.adoc[7.1 Briefing]
 ** xref:07-02-execution.adoc[7.2 Execution]
 ** xref:07-03-hints.adoc[7.3 Hints]
