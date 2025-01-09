@@ -7,12 +7,13 @@ include::_attributes.adoc[]
 .Click to reveal Hint #1
 [%collapsible]
 ====
-Try removing some features that SHAP says is dragging down the price, but be careful with removing the categories as they also seem to help the prediction in some cases.  
-When you change the features, the datapoints that predict below zero might also change, so make sure to change the `DATAPOINT` that's used for CounterFactual and SHAP.  
+Try removing some features that SHAP says is dragging down the price, but be careful with removing the categories as they also seem to help the prediction in some cases.
+
+When you change the features, the datapoints that predict below zero might also change, so make sure to change the `DATAPOINT` that's used for CounterFactual and SHAP.
 ====
 
 == Hint #2
 [%collapsible]
 ====
-Remove the `discounted` and `discount_amount` features to get only possitive values.
+Remove the `discounted` and `discount_amount` features to get only positive values.
 ====

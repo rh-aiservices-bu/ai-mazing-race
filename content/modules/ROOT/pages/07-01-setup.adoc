@@ -1,10 +1,20 @@
-= Setup
+= Briefing
 include::_attributes.adoc[]
 
-Sweden is in dire need of your help!
-The world famous company LUND (Luxuriously Unique Nordic Designs) recently started adopting AI to set prices to the wares they sell.
-However, they soon noticed that the AI occasionally gave some items far too much discount, to the point where the items were for free or even had a negative price.
-LUND has already built the infrastructure to make the stores dependant on this AI, so it's not as easy as just disabling it.
+== Situation
 
-Because of how big part of Sweden's economy LUND is, this is risking the financial collapse of the entire country, which would result in a dire lack of high-quality meatballs to the rest of the world.
-Help LUND and Sweden by figuring out what goes wrong with the model and how it can be improved.
+Sweden is in dire need of your help!
+
+* The world famous Swedish furniture company called **LUND** (Luxuriously Unique Nordic Designs) recently adopted AI to set prices for the items they sell.
+
+* However, they soon noticed that the AI occasionally gave some items far too much discount, to the point where the items were for free or even had a negative price.
+
+* LUND has already built the infrastructure to make the stores dependant on this AI, so it's not as easy as just disabling it.
+
+* Because LUND accounts for about 72% of Sweden's economy, this is risking the financial collapse of the entire country. And in turn, this would also result in a worldwide shortage of high-quality meatballs, which could mean the end of human civilization on earth.
+
+This is why the UN has decided to step in and send their best to help LUND find a swift resolution to this critical issue.
+
+== Mission:
+
+Help LUND, Sweden, (and the world, really) by figuring out what is wrong with the model and how it can be improved.
