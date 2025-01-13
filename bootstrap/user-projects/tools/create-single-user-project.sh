@@ -267,7 +267,7 @@ apiVersion: v1
 metadata:
   annotations:
     openshift.io/description: ''
-    openshift.io/display-name: WildFires in Canada - Workbench
+    openshift.io/display-name: Mission Workbench - PVC
     volume.beta.kubernetes.io/storage-provisioner: openshift-storage.rbd.csi.ceph.com
     volume.kubernetes.io/storage-provisioner: openshift-storage.rbd.csi.ceph.com
   name: $WORKBENCH_NAME
@@ -297,8 +297,8 @@ metadata:
     notebooks.opendatahub.io/oauth-logout-url: >-
       $DASHBOARD_ROUTE/projects/$USER_PROJECT?notebookLogout=$WORKBENCH_NAME
     opendatahub.io/accelerator-name: ''
-    openshift.io/description: ''
-    openshift.io/display-name: WildFires in Canada - Workbench
+    openshift.io/description: 'Use this workbench to perform your mission'
+    openshift.io/display-name: Mission Workbench
     notebooks.opendatahub.io/last-image-selection: '$WORKBENCH_IMAGE'
     notebooks.opendatahub.io/last-size-selection: Small
     opendatahub.io/username: $USER_NAME
