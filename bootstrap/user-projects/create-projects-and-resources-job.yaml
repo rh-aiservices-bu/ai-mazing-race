@@ -396,10 +396,10 @@ spec:
                   - resources:
                       limits:
                         cpu: '2'
-                        memory: 8Gi
+                        memory: 4Gi
                       requests:
-                        cpu: '1'
-                        memory: 8Gi
+                        cpu: '2'
+                        memory: 4Gi
                     readinessProbe:
                       failureThreshold: 3
                       httpGet:
