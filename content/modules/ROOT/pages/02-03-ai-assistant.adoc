@@ -39,9 +39,6 @@ But we suggest the following might be ways of leveraging the AI assistant:
 * support with writing and developing notes
 * brainstorming ideas, theories, and tests
 
-// image::2024-12-20-23-02-05.png[]
-// image::2024-12-20-23-02-34.png[]
+== Getting Support during the event
 
-// image::2024-12-20-23-03-00.png[]
-// image::2024-12-20-23-04-00.png[]
-
+* Reach out to the moderators if you need clarifications.
