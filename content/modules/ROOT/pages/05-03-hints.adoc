@@ -21,6 +21,29 @@ Does your workbench know where your bucket is? Make sure they’re properly _con
 .Click to reveal Hint #3
 [%collapsible]
 ====
+Each time you complete the Notebook, you’ve performed an experiment. To save your experiments in the Model Registry:
+
+1. Open the OpenShift AI Dashboard.
+2. Navigate to **Model Registry** from the menu on the right-hand side.
+3. Click **Register Model** and fill in the mandatory fields.
+
+To store **hyperparameters**, follow these steps:
+
+1. Open the version you just registered.
+2. Click **Add Property** to add key-value pairs.
+3. You can use the following format for storing hyperparameters:
+
+```
+epochs: 100  
+batch_size: 32  
+learning_rate: 0.001 
+hidden_layer_units: 16
+mean_squared_error: 110131701.24916428
+mean_absolute_error: 9370.798339328354
+```
+
+After you register three different version of the same model, you can deploy the best performing one.
+
 To deploy use the following options:
 
 - Model deployment name: baklava
@@ -31,5 +54,5 @@ To deploy use the following options:
     > Select from existing data connection and pick `models`
     > Path: `models/<your-version>/baklava`
 
-Then, you can use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
+Then, if you prefer, you can use `2-baklava_request_model.ipynb` notebook to see how many kg of baklava a give region is expected to have!
 ====

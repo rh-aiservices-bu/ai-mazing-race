@@ -24,7 +24,7 @@ We invite you to join our effort to **optimize** this model further. Your task i
 
 - **Experiment with Hyperparameters**: Tweak parameters like `epochs`, `batch_size`, `learning_rate`, and `hidden_layer_units` to find the optimal configuration.
 - **Store Your Experiments**: Record the hyperparameters you used, the resulting model artifacts (the trained model), and evaluation metrics in Model Registry.
-- **Deploy the Best Model**: Once you've identified the most performant model, deploy it to your environment.
+- **Deploy the Best Model**: Once you've identified the most performant model, deploy it to your environment from the Model Registry.
 - **Test Your Model**: Use the provided notebook to make predictions and evaluate the deployed model's performance.
 
-By making your experiments and storing your findings, you'll be part of a collaborative effort to make the most of this sweet AI challenge.
+By making your experiments and storing your findings in Model Registry, you'll be part of a collaborative effort to make the most of this sweet AI challenge.
