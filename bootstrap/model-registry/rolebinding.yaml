@@ -23,7 +23,7 @@ rules:
     resources:
       - services
     resourceNames:
-      - registry
+      - rh1-registry
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
