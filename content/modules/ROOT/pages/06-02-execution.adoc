@@ -4,10 +4,3 @@ include::_attributes.adoc[]
 
 In the folder `lab-materials/06`, located link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/06[here] in github, you will find various pieces of code and artifacts. Open the various notebooks in sequence, and follow the instructions to reproduce the work done so far.
 
-In order to make your life easier, there is already a workbench called "WildFires in Canada - Workbench" running in your project!
-And this workbench already has the git project (`https://github.com/rh-aiservices-bu/ai-mazing-race.git`) cloned into it.
-
-So, in that workbench, you can head over to this path to find the existing materials:
-
-[.bordershadow]
-image::06/06-02-navigate-path.png[]

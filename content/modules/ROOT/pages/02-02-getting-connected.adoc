@@ -41,6 +41,19 @@ If you got this far and saw all that, congratulations, you properly connected to
 
 We are now ready to start the {ic}.
 
-== Getting Support during the event
+== Default Workbench
 
-* Reach out to the moderators if you need clarifications.
+* If you click on your project, you will see that there are 2 running workbenches:
++
+[.bordershadow]
+image::02/2-wb.png[]
+
+* In order to make your life easier, the workbench called "Mission Workbench" is already running in your project!
+* And this workbench already has the git project (`https://github.com/rh-aiservices-bu/ai-mazing-race.git`) cloned into it.
+* So, in that workbench, you will be able to find all the relevant Lab Materials
+* More on that soon.
++
+[.bordershadow]
+image::06/06-02-navigate-path.png[]
+
+

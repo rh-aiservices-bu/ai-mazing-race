@@ -2,8 +2,8 @@
 ** xref:01-01-starting-point.adoc[1.1 Setting the stage]
 
 * 2. Connection and Setup ({user})
-** xref:02-01-cluster-setup.adoc[2.1 Cluster Setup]
-** xref:02-02-getting-connected.adoc[2.2 Getting connected]
+// ** xref:02-01-cluster-setup.adoc[2.1 Cluster Setup]
+** xref:02-02-getting-connected.adoc[2.1 Getting connected]
 ** xref:02-03-ai-assistant.adoc[2.2 AI Assistant]
 
 * 3. Mission: Spain 🇪🇸🌟
