@@ -7,14 +7,14 @@ metadata:
     openshift.io/display-name: Registry User registry
   name: rh1-registry-user-registry
   labels:
-    app: registry
-    app.kubernetes.io/component: registry
-    app.kubernetes.io/created-by: registry-operator
-    app.kubernetes.io/instance: registry-user-registry
-    app.kubernetes.io/managed-by: registry-operator
-    app.kubernetes.io/name: registry
-    app.kubernetes.io/part-of: registry
-    component: registry
+    app: rh1-registry
+    app.kubernetes.io/component: rh1-registry
+    app.kubernetes.io/created-by: rh1-registry-operator
+    app.kubernetes.io/instance: registry-user-rh1-registry
+    app.kubernetes.io/managed-by: rh1-registry-operator
+    app.kubernetes.io/name: rh1-registry
+    app.kubernetes.io/part-of: rh1-registry
+    component: rh1-registry
 rules:
   - verbs:
       - get
