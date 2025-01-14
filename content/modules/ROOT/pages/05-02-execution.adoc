@@ -8,3 +8,5 @@ The notebook contains the model code with parameters ready for you to tweak and 
 Once you've identified the best settings for your model within three experiments, deploy the best-performing one!
 
 Good luck, and happy experimenting!
+
+Click to open the link:https://vclock.com/set-timer-for-15-minutes/[15-minute timer^]

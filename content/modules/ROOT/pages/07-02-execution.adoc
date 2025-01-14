@@ -8,7 +8,7 @@ Start by going to your Data Science project and create a new workbench with thes
 
 Feel free to pick any name for the workbench.
 
-After that's done, clone this repository into the workbench: link:https://github.com/rh-aiservices-bu/ai-mazing-race.
+After that's done, clone this repository into the workbench: link:https://github.com/rh-aiservices-bu/ai-mazing-race[https://github.com/rh-aiservices-bu/ai-mazing-race^].
 
 ```
 https://github.com/rh-aiservices-bu/ai-mazing-race.git
@@ -30,3 +30,4 @@ One very easy way to do this is to click this fast-forward button:
 [.bordershadow]
 image::07/run-all-button.png[]
 
+Click to open the link:https://vclock.com/set-timer-for-15-minutes/[15-minute timer^]
