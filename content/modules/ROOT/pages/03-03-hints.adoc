@@ -22,7 +22,7 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 * small - pytorch - wb, with 5 GB of disk.
 * Navigate to lab-materials/03 and open stars-classification.ipynb
 
-* train_test_split has something wrong...
+* train_test_split has something wrong... maybe changing some range in the parameters?
 * plt.show() is used to visualize the confusion matrix
 
 * In the Jupyter Notebook, you have the possibility to use Elyra pipelines...
@@ -36,7 +36,7 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 ====
 
 * !pip install seaborn
-* remove rhoai_is_great=True from train_test_split in "Train the Model" section
+* adjust the test_size to 0.3 from train_test_split in "Train the Model" section as the 30% of the data is used for testing
 * substitute plt.show_me_the_stars with plt.show()
 * From the Jupyter Notebook add a New Data Science Pipeline Editor, and drag and drop the stars-classification.ipynb file
 * Run the pipeline from Elyra / Data Science Pipeline Editor
