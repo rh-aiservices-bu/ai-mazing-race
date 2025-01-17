@@ -1,7 +1,7 @@
 import os
 import random
 
-def get_random_image(path: str = "/opt/app-root/src/ai-mazing-race/lab-materials/06/06-wildfire-sample") -> str:
+def get_random_image(path: str = "06-wildfire-sample") -> str:
     """
     Search through all subfolders of the specified path for image files,
     pick one at random, and return its absolute path.
