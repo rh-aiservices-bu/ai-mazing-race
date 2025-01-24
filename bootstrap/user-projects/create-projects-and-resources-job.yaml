@@ -184,31 +184,14 @@ spec:
                     apiVersion: v1
                     kind: Secret
                     metadata:
-                      name: aws-connection-minio-wildfire
+                      name: aws-connection-models
                       labels:
                         opendatahub.io/dashboard: "true"
                         opendatahub.io/managed: "true"
                       annotations:
                         opendatahub.io/connection-type: s3
-                        openshift.io/display-name: Wildfire Model in Minio (stored in /wildfire_onnx/)
-                    type: Opaque
-                    stringData:
-                      AWS_ACCESS_KEY_ID: $MINIO_ROOT_USER
-                      AWS_SECRET_ACCESS_KEY: $MINIO_ROOT_PASSWORD
-                      AWS_DEFAULT_REGION: us
-                      AWS_S3_ENDPOINT: $MINIO_HOST
-                      AWS_S3_BUCKET: models
-                    ---
-                    apiVersion: v1
-                    kind: Secret
-                    metadata:
-                      name: aws-connection-minio-baklava
-                      labels:
-                        opendatahub.io/dashboard: "true"
-                        opendatahub.io/managed: "true"
-                      annotations:
-                        opendatahub.io/connection-type: s3
-                        openshift.io/display-name: Shared Minio for baklava
+                        openshift.io/display-name: Shared Minio for models
+                        openshift.io/description: "Use to store models."
                     type: Opaque
                     stringData:
                       AWS_ACCESS_KEY_ID: $MINIO_ROOT_USER
@@ -451,6 +434,9 @@ spec:
                       - name: JUPYTER_IMAGE
                         value: >-
                           image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/$WORKBENCH_IMAGE
+                    envFrom:
+                      - secretRef:
+                          name: aws-connection-models
                     ports:
                       - containerPort: 8888
                         name: notebook-port
