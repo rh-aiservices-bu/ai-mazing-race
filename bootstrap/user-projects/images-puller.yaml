@@ -38,6 +38,16 @@ spec:
           requests:
             cpu: 10m
             memory: 10Mi
+      - name: puller-trusty
+        image: image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/odh-trustyai-notebook:2024.2
+        command: ["tail"]
+        args: ["-f", "/dev/null"]
+        resources:
+          limits:
+            memory: 20Mi
+          requests:
+            cpu: 10m
+            memory: 10Mi
 ---
 apiVersion: apps/v1
 kind: DaemonSet
