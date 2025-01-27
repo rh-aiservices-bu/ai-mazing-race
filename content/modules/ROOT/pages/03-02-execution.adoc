@@ -7,7 +7,6 @@ This is all that was saved from the sangria-soaked laptop.
 
 Your task is to ensure the ASSA can easily process the data extracted by the GranTeCan telescope. Follow these steps:
 
-. From OpenShift AI, create a new workbench
 . Resolve any issues in the notebook code
 . Schedule a pipeline to run that notebook daily
 
