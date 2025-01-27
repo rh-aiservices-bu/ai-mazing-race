@@ -12,8 +12,8 @@ def run_command(command):
 def get_inference_service_url():
     """Retrieve the full inference service URL and model name."""
     # Commands to run
-    get_IS_name = "oc get inferenceservice -o jsonpath='{.items[0].metadata.name}'"
-    get_IS_URL = "oc get inferenceservice -o jsonpath='{.items[0].status.url}'"
+    get_IS_name = "oc get inferenceservice wildfire01 -o jsonpath='{.metadata.name}'"
+    get_IS_URL = "oc get inferenceservice wildfire01 -o jsonpath='{.status.url}'"
 
     # Retrieve results
     deployed_model_name = run_command(get_IS_name)
