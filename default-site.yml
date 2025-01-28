@@ -5,7 +5,8 @@ site:
 
 ui:
   bundle:
-    url: https://github.com/rhpds/showroom_theme_summit/releases/download/rh-1-2025/ui-bundle.zip
+    url: ./content/docs-ui/ui-bundle.zip
+  supplemental_files: ./content/supplemental-ui
 
 content:
   edit_url: 'https://github.com/rh-aiservices-bu/ai-mazing-race/edit/dev/{path}'
@@ -14,7 +15,7 @@ content:
       start_path: content
 
 output:
-  dir: www
+  dir: ./content/www
 
 runtime:
-  cache_dir: .cache/antora
+  cache_dir: ./content/.cache/antora
