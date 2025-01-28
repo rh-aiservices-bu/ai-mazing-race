@@ -5,7 +5,7 @@ site:
 
 ui:
   bundle:
-    url: ./content/docs-ui/ui-bundle.zip
+    url: https://github.com/rhpds/showroom_theme_summit/releases/download/rh-1-2025/ui-bundle.zip
   supplemental_files: ./content/supplemental-ui
 
 content:
