@@ -3,6 +3,8 @@ include::_attributes.adoc[]
 == Good Granite Questions
 [%collapsible]
 ====
+What are possible bottlenecks for response time to an AI model deployed on OpenShift?
+
 How can I improve the response time of an application deployed in Red Hat Openshift AI?
 ====
 

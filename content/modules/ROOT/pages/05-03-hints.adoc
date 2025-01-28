@@ -3,7 +3,7 @@ include::_attributes.adoc[]
 == Good Granite Questions
 [%collapsible]
 ====
-You can share your parameters and results with the model and ask for its suggestion for improvements :)
+You can share your hyperparameters and results with the model and ask for suggestion for improvements :)
 ====
 
 == Hint #1

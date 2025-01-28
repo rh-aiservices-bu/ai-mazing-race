@@ -6,7 +6,7 @@ Start by going to your Data Science project and make sure the `Mission workbench
 * Image: `Standard Data Science`
 * Size: `Small`
 
-In the folder `lab-materials/03`, you will find a Notebook file: `03-stars-classification.ipynb` and a CSV file.
+In the folder `lab-materials/03`, you will find a Notebook file: `stars-classification.ipynb` and a CSV file.
 
 This is all that was saved from the sangria-soaked laptop.
 
