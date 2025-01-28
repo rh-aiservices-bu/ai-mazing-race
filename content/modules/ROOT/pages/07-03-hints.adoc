@@ -5,8 +5,9 @@ include::_attributes.adoc[]
 [%collapsible]
 ====
 How should I use a CounterFactual result when updating my data features for training my AI model?
-====
+
 How can I use the result of SHAP values to choose input features to my AI model?
+====
 
 == Hint #1
 [%collapsible]

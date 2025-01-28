@@ -23,6 +23,8 @@ At the end of the allotted time, you will be asked to either vote on a poll, or 
 
 Make sure that you keep clear notes, in plain text or in Markdown, ready to submit at the end of the exercise!
 
+Each scenario is assigned a difficulty level, indicating that some may take more time than others. Be sure to manage your time wisely.
+
 == Working environment
 
 * A shared Red Hat OpenShift AI cluster is provided.

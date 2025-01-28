@@ -21,23 +21,23 @@ include::_attributes.adoc[]
 
 
 == Mission
-
+==== _**Difficuly Level:** Bring it On_
 * As part of your instruction set, you will find information on how to deploy an image detection model on Red Hat OpenShift AI.
 * This model has already been trained, and we assume it to be of good quality. (Also, it's urgent, and that's all we have, so we can't be picky)
 * There are however concerns about performance aspect of this model...
 ** Given the large number of robotic geese deployed, and the number of pictures that will be sent in, we need some assurance that the images can be processed in real time or as close to it as we can
 * Your specific mission:
-** Phase 1:
-** get the model deployed using the default instructions
-** measure the average response time for inference
-*** with 1 inference request at a time
-*** with multiple and simultaneous inference requests
-** estimate the inference throughput of this setup. (expressed in requests per minute)
-** Phase 2:
-*** describe the various approaches that one might take in order to either:
+** **Phase 1:**
+*** Get the model deployed using the default instructions
+*** Measure the average response time for inference
+**** with 1 inference request at a time
+**** with multiple and simultaneous inference requests
+*** Estimate the inference throughput of this setup. (expressed in requests per minute)
+** **Phase 2:**
+*** Describe the various approaches that one might take in order to either:
 **** increase the effective throughput
 **** decrease the operating costs
-*** perform as many experiments are you are able to in order to test the approaches
-*** describe and extrapolate your findings on how much improvement you think you can bring
+*** Perform as many experiments are you are able to in order to test the approaches
+*** Describe and extrapolate your findings on how much improvement you think you can bring
 
 Go to the next page for detailed location of useful materials.

@@ -1,11 +1,11 @@
 = Execution
 include::_attributes.adoc[]
 
-Start by going to your Data Science project and update the `Mission workbench` workbench to have these settings:
+Start by going to your Data Science project and make sure the `Mission workbench` have these settings:
 
-* Image: PyTorch
-* Size: Standard
+* Image: `PyTorch`
+* Size: `Standard`
 
-In the folder `lab-materials/06`, located link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/06[here^] in github, you will find various pieces of code and artifacts. Open the various notebooks in sequence, and follow the instructions to reproduce the work done so far.
+In the folder `lab-materials/06`, located link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/06[here^] in GitHub, you will find various pieces of code and artifacts. Open the various notebooks in sequence, and follow the instructions to reproduce the work done so far.
 
 Click to open the link:https://vclock.com/set-timer-for-15-minutes/[15-minute timer^]

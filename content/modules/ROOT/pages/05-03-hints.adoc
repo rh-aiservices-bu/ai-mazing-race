@@ -1,12 +1,17 @@
 = Hints
 include::_attributes.adoc[]
+== Good Granite Questions
+[%collapsible]
+====
+You can share your hyperparameters and results with the model and ask for suggestion for improvements :)
+====
 
 == Hint #1
 
 .Click to reveal Hint #1
 [%collapsible]
 ====
-Each time you run the cells, your previous experiment results will disappear like baklava crumbs on a plate. If you want to revisit your results to compare, make sure to save your results before starting a new experiment!
+Each time you run the cells, your previous experiment results will disappear like baklava crumbs on a plate. If you want to revisit your results to compare, make sure to save your results to Model Registry before starting a new experiment!
 ====
 
 == Hint #2
@@ -34,21 +39,29 @@ To store **hyperparameters**, follow these steps:
 3. You can use the following format for storing hyperparameters:
 
 ```
-epochs: 100  
-batch_size: 32  
-learning_rate: 0.001 
-hidden_layer_units: 16
-mean_squared_error: 110131701.24916428
-mean_absolute_error: 9370.798339328354
+Epochs: 100
+Batch Size: 16
+Learning Rate: 0.001
+Hidden Layer Units: 64
+Mean Squared Error: 60133219.1447
+Mean Absolute Error: 6949.6542
+Mean Squared Error (MSE): 60133219.14469852
+Mean Absolute Error (MAE): 6949.654246425216
 ```
+
++
+[.bordershadow]
+image::05/model-registry.gif[]
+
+_Alternatively, you can use the Python library of Model Registry if you prefer to store them if you want 😉_
 
 After you register three different version of the same model, you can deploy the best performing one.
 
 To deploy use the following options:
 
-- Model deployment name: baklava
-- Serving runtime: `OpenVino Model Server``
-- Model framework: `onnx - 1``
+- Model deployment name: `baklava`
+- Serving runtime: `OpenVino Model Server`
+- Model framework: `onnx - 1`
 - Model location:
 
     > Select from existing data connection and pick `models`
