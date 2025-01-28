@@ -6,7 +6,7 @@ include::_attributes.adoc[]
 ====
 How to install seaborn in Python in Jupyter Notebook?
 
-How do I see available functions of plots in Python?
+What are the colourmaps in heatmap I create in a Jupyter Notebook?
 ====
 
 == Hint #1
@@ -37,7 +37,7 @@ How do I see available functions of plots in Python?
 
 * `!pip install seaborn`
 * Adjust the `test_size` to `0.3` from `train_test_split` in "Train the Model" section as the 30% of the data is used for testing
-* Substitute `plt.show_me_the_stars` with `plt.show()`
+* Substitute `cmap="Blue"` with `cmap="Blues"`
 +
 [.bordershadow]
 image::03/confusion-matrix.png[width=500, height=300]
