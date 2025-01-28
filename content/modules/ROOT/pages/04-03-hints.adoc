@@ -34,7 +34,7 @@ So, the solution is to use the `pip` command to install the missing Python packa
 
 == Task 2 - The environment
 
-Not really a hint, but before you lose too much time on digging this out, here is an info we got _from_ a friend: `quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074`
+Not really a hint, but before you lose too much time on digging this out, here is an info we got _from_ a friend: `quay.io/modh/odh-minimal-notebook-container:v3-2024b-20241111`
 
 You're welcome!
 
@@ -69,7 +69,7 @@ You need to create a new container image that includes the missing Python packag
 Here is an example you can use:
 
 ```Dockerfile
-FROM quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074
+FROM quay.io/modh/odh-minimal-notebook-container:v3-2024b-20241111
 
 RUN pip install stegano
 ```
@@ -80,7 +80,7 @@ RUN pip install stegano
 * Create the BuildConfig using the `oc new-build` command:
 
 ```bash
-oc new-build --name=ai-mazing-race-stegano -D $'FROM quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074\nRUN pip install stegano'
+oc new-build --name=ai-mazing-race-stegano -D $'FROM quay.io/modh/odh-minimal-notebook-container:v3-2024b-20241111\nRUN pip install stegano'
 ```
 
 * You can watch the process of building the new container image by running the following command:
@@ -111,11 +111,11 @@ spec:
     dockerStrategy:
       from:
         kind: DockerImage
-        name: 'odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074'
+        name: 'odh-minimal-notebook-container:v3-2024b-20241111'
   source:
     type: Dockerfile
     dockerfile: |-
-      FROM quay.io/modh/odh-minimal-notebook-container@sha256:9592b9aed5248b77c7490f08004091174030035a76c3b198f9f01c8be0060074
+      FROM quay.io/modh/odh-minimal-notebook-container:v3-2024b-20241111
       RUN pip install stegano
 ```
 * Launch the build by clicking on **Start Build** in the Actions drop-down of the new BuildConfig.

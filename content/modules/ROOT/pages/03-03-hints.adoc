@@ -35,9 +35,13 @@ How do I see available functions of plots in Python?
 [%collapsible]
 ====
 
-* `!pip install seaborn``
-* Adjust the test_size to 0.3 from train_test_split in "Train the Model" section as the 30% of the data is used for testing
-* Substitute plt.show_me_the_stars with plt.show()
+* `!pip install seaborn`
+* Adjust the `test_size` to `0.3` from `train_test_split` in "Train the Model" section as the 30% of the data is used for testing
+* Substitute `plt.show_me_the_stars` with `plt.show()`
++
+[.bordershadow]
+image::03/confusion-matrix.png[width=500, height=300]
+
 * From the Jupyter Notebook, in Launcher, click on Pipeline Editor, and drag and drop the `stars-classification.ipynb` file
 * While you are on Pipeline Editor, click on the Notebook and open up the properties
 * Add `Stars.csv` as a file dependency.
