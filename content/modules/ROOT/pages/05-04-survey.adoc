@@ -5,6 +5,6 @@ include::_attributes.adoc[]
 
 Time's up!
 
-Now, head over to our github discussion, and paste your notes in reply to the thread:
+Now, head over to our GitHub discussion, and paste your notes in reply to the thread:
 
-link:https://github.com/rh-aiservices-bu/ai-mazing-race/discussions/22[Github Discussion / 03 - Türkiye^]
+link:https://github.com/rh-aiservices-bu/ai-mazing-race/discussions/22[GitHub Discussion / 03 - Türkiye^]

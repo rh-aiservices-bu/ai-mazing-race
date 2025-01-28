@@ -1,6 +1,14 @@
 = Hints
 include::_attributes.adoc[]
 
+== Good Granite Questions
+[%collapsible]
+====
+How to install seaborn in Python in Jupyter Notebook?
+
+How do I see available functions of plots in Python?
+====
+
 == Hint #1
 
 .Click to reveal Hint #1
@@ -14,14 +22,6 @@ include::_attributes.adoc[]
 .Click to reveal Hint #1
 [%collapsible]
 ====
-GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
-
-`git clone https://github.com/rh-aiservices-bu/ai-mazing-race.git`
-
-* Create a project (stars-{user})
-* small - pytorch - wb, with 5 GB of disk.
-* Navigate to lab-materials/03 and open stars-classification.ipynb
-
 * train_test_split has something wrong... maybe changing some range in the parameters?
 * plt.show() is used to visualize the confusion matrix
 
@@ -35,10 +35,15 @@ GH link: https://github.com/rh-aiservices-bu/ai-mazing-race
 [%collapsible]
 ====
 
-* !pip install seaborn
-* adjust the test_size to 0.3 from train_test_split in "Train the Model" section as the 30% of the data is used for testing
-* substitute plt.show_me_the_stars with plt.show()
-* From the Jupyter Notebook add a New Data Science Pipeline Editor, and drag and drop the stars-classification.ipynb file
-* Run the pipeline from Elyra / Data Science Pipeline Editor
+* `!pip install seaborn``
+* Adjust the test_size to 0.3 from train_test_split in "Train the Model" section as the 30% of the data is used for testing
+* Substitute plt.show_me_the_stars with plt.show()
+* From the Jupyter Notebook, in Launcher, click on Pipeline Editor, and drag and drop the `stars-classification.ipynb` file
+* While you are on Pipeline Editor, click on the Notebook and open up the properties
+* Add `Stars.csv` as a file dependency.
+* Run the pipeline from Elyra
++
+[.bordershadow]
+image::03/spain-elyra.gif[]
 * Open the OpenShift AI dashboard, go to Data Science Pipelines and setup schedule for 24 hours
 ====

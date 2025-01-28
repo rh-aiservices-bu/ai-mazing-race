@@ -14,20 +14,17 @@ include::_attributes.adoc[]
 * Good progress had been made, but it was on an data science intern's laptop, and sadly, a spilled Sangria was no match for the laptop.
 
 == Mission
+==== _**Difficuly Level:** Warming Up_
 
 * The current challenges are as follows:
 ** Some older version of the code were found on an old USB drive, but we know it's definitely not the most recent version we had gotten to.
 ** The intern, fearing for their life, went into hiding, and so we can't ask them any question anymore.
 ** We NEED to get this working again asap!
-* The salvaged code and data have been stored in this link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/03[Git repository and folder^]:
+* The salvaged code and data have been stored under folder link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/03[lab-materials/03^].
 
 Your specific tasks (in no particular order) are as follows:
 
 * Fix the all the **errors** you might find in the notebook code
-
-* Use a workbench **image** that is best suited for running the notebook
-
-* Investigate which workbench container **size** is the smallest size that you can use
 
 * Confirm that precision and accuracy levels reach 98% or higher
 

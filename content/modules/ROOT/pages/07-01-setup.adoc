@@ -16,5 +16,5 @@ Sweden is in dire need of your help!
 This is why the UN has decided to step in and send their best to help LUND find a swift resolution to this critical issue.
 
 == Mission:
-
+==== _**Difficuly Level:** Final Boss_
 Help LUND, Sweden, (and the world, really) by figuring out what is wrong with the model and how it can be improved.

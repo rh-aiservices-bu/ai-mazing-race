@@ -1,27 +1,29 @@
 = Execution
 include::_attributes.adoc[]
 
-Start by going to your Data Science project and update the `Mission workbench` workbench to have these settings:
+Start by going to your Data Science project and make sure the `Mission workbench` have these settings:
 
-* Image: TrustyAI
-* Size: Standard
+* Image: `TrustyAI`
+* Size: `Standard`
 
-After that's done, clone this repository into the workbench: link:https://github.com/rh-aiservices-bu/ai-mazing-race[https://github.com/rh-aiservices-bu/ai-mazing-race^].
+// After that's done, clone this repository into the workbench: link:https://github.com/rh-aiservices-bu/ai-mazing-race[https://github.com/rh-aiservices-bu/ai-mazing-race^].
 
-```
-https://github.com/rh-aiservices-bu/ai-mazing-race.git
-```
+// ```
+// https://github.com/rh-aiservices-bu/ai-mazing-race.git
+// ```
 
 Go to the folder `lab-materials/07` where you will find the model and code to help you analyze and build new ones.
 
 == Task 1 - Understand what's wrong
-Run through the code in notebook `1_model_training_and_analyzis` to build a model and see what might be wrong with it.
-How does it perform on the evaluation, are there any features that seem to be suspiciously impactful?
+Run through the code in notebook `1_model_training_and_evaluation.ipynb to build a model and see what might be wrong with it.
+How does it perform on the evaluation, are there any data features that seem to be suspiciously impactful?
 
 == Task 2 - Propose and test changes
-After you have made some thoughts on what might be wrong, go back to the start of the notebook and change what features are used and how the data is processed.
+After you have made some thoughts on what might be wrong, go back to the start of the notebook and change what data features are used and how the data is processed.
 The goal is to get as small of an error as possible while also having no/few negative prices (they are typically bad for business).
-You can change the datapoint you are analyzing with Counterfactual and SHAP by changing the value of `DATAPOINT`, do this to test with both points that predict below 0 and the worst prediction.
+You can change the datapoint you are analyzing with `Counterfactual` and `SHAP (SHapley Additive exPlanations)` by changing the value of `DATAPOINT`, do this to test with both points that predict below 0 and the worst prediction.
+
+_DATAPOINT refers to the specific data entry or observation that you are analyzing or testing within the model. By changing the value of DATAPOINT, you're selecting different input data for the model to analyze._ 
 
 If you re-run the notebook, make sure to restart the kernel so that no results from the previous session are introduced in your new one.
 One very easy way to do this is to click this fast-forward button:

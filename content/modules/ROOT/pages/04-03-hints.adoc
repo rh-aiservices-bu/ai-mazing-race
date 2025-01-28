@@ -1,6 +1,14 @@
 = Hints
 include::_attributes.adoc[]
 
+== Good Granite Questions
+[%collapsible]
+====
+How to install stegano in Python in Jupyter Notebook?
+
+What are the ways to build new image in OpenShift?
+====
+
 == Task 1 - The message
 
 === Hint #1

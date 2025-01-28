@@ -1,11 +1,10 @@
 = Execution
 include::_attributes.adoc[]
 
-Start by going to your Data Science project and update the `Mission workbench` workbench to have these settings:
+Start by going to your Data Science project and make sure the `Mission workbench` have these settings:
 
-* Image: ???  
-* Size: ???  
-(This is for you to figure our)
+* Image: `Standard Data Science`
+* Size: `Small`
 
 In the folder `lab-materials/03`, you will find a Notebook file: `03-stars-classification.ipynb` and a CSV file.
 

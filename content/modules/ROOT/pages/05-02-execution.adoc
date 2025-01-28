@@ -1,10 +1,10 @@
 = Execution
 include::_attributes.adoc[]
 
-Start by going to your Data Science project and update the `Mission workbench` workbench to have these settings:
+Start by going to your Data Science project and make sure the `Mission workbench` have these settings:
 
-* Image: Standard Data Science
-* Size: Standard
+* Image: `Standard Data Science`
+* Size: `Small`
 
 In the folder `lab-materials/05`, you'll find a Notebook file: `1-experiment_train_baklava.ipynb`, along with data covering the past ten years of baklava consumption across regions in Türkiye.
 
