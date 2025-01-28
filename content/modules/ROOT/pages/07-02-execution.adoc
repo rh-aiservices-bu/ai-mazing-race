@@ -1,12 +1,10 @@
 = Execution
 include::_attributes.adoc[]
 
-Start by going to your Data Science project and create a new workbench with these settings:
+Start by going to your Data Science project and update the `Mission workbench` workbench to have these settings:
 
 * Image: TrustyAI
 * Size: Standard
-
-Feel free to pick any name for the workbench.
 
 After that's done, clone this repository into the workbench: link:https://github.com/rh-aiservices-bu/ai-mazing-race[https://github.com/rh-aiservices-bu/ai-mazing-race^].
 

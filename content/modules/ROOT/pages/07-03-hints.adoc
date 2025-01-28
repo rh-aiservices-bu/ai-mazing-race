@@ -1,10 +1,14 @@
 = Hints
 include::_attributes.adoc[]
 
+== Good Granite Questions
+[%collapsible]
+====
+How should I use a CounterFactual result when updating my data features for training my AI model?
+====
+How can I use the result of SHAP values to choose input features to my AI model?
 
 == Hint #1
-
-.Click to reveal Hint #1
 [%collapsible]
 ====
 Try removing some features that SHAP says is dragging down the price, but be careful with removing the categories as they also seem to help the prediction in some cases.
