@@ -1,6 +1,11 @@
 = Execution
 include::_attributes.adoc[]
 
+Start by going to your Data Science project and update the `Mission workbench` workbench to have these settings:
+
+* Image: Standard Data Science
+* Size: Standard
+
 There will be three different tasks to perform to fulfil your mission. For each task, on the next page, you will find some hints to help you solve it. If you are stuck, solutions are also provided. They can also help you verify your own solution.
 
 == Task 1 - The message
