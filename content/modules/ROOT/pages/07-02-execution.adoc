@@ -15,7 +15,7 @@ Start by going to your Data Science project and make sure the `Mission workbench
 Go to the folder `lab-materials/07` where you will find the model and code to help you analyze and build new ones.
 
 == Task 1 - Understand what's wrong
-Run through the code in notebook `1_model_training_and_evaluation.ipynb to build a model and see what might be wrong with it.
+Run through the code in notebook `1_model_training_and_evaluation.ipynb` to build a model and see what might be wrong with it.
 How does it perform on the evaluation, are there any data features that seem to be suspiciously impactful?
 
 == Task 2 - Propose and test changes
