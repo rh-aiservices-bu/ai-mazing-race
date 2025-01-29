@@ -17,5 +17,3 @@ Your task is to ensure the ASSA can easily process the data extracted by the Gra
 
 The ASSA trusts you! You are our last hope!
 
-
-Click to open the link:https://vclock.com/set-timer-for-15-minutes/[15-minute timer^]
