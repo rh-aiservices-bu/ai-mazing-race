@@ -14,7 +14,7 @@ include::_attributes.adoc[]
 * Good progress had been made, but it was on an data science intern's laptop, and sadly, a spilled Sangria was no match for the laptop.
 
 == Mission
-==== _**Difficuly Level:** Warming Up_
+=== _**Difficuly Level:** Warming Up_
 
 * The current challenges are as follows:
 ** Some older version of the code were found on an old USB drive, but we know it's definitely not the most recent version we had gotten to.
