@@ -23,7 +23,11 @@ At the end of the allotted time, you will be asked to either vote on a poll, or 
 
 Make sure that you keep clear notes, in plain text or in Markdown, ready to submit at the end of the exercise!
 
-Each scenario is assigned a difficulty level, indicating that some may take more time than others. Be sure to manage your time wisely.
+Each scenario is assigned a difficulty level, indicating that some may take more time than others. Be sure to manage your time wisely:
+
+- **Warming Up (Level 1)** – Quick and easy start  
+- **Bring it On (Level 2)** – Takes more time to solve  
+- **Final Boss (Level 3)** – A race against the clock
 
 == Working environment
 
