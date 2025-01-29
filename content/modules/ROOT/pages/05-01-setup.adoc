@@ -15,7 +15,7 @@ However, with great treats come great responsibilities!
 * This year, to ensure that every baklava lover gets their sweet fix, and to meet this incredible demand, a predictive AI model was built to predict the demand as accurately as possible! The country's future hangs in the balance!
 
 == Mission
-=== _**Difficuly Level:** Warming Up_
+=== _**Difficulty Level:** Warming Up_
 
 But Türkiye believes it can do better and has hired you to help!
 

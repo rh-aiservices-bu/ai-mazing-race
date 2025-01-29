@@ -1,4 +1,3 @@
-ASSA
 adoc
 aed
 ai
@@ -20,6 +19,7 @@ arnaucas
 ASA
 asciidoc
 asciidoctor
+ASSA
 Audrey
 auth
 Auth
@@ -31,7 +31,6 @@ Brandybuck
 Brandybuck's
 bugfix
 BuildConfig
-GranTeCan
 c'est
 CAIx
 california
@@ -51,6 +50,7 @@ CLI
 CLM
 cls
 CMD
+colourmaps
 config
 Config
 Containerfile
@@ -110,6 +110,7 @@ frontend
 Frontend
 GH
 GiB
+gif
 gitea
 Gitea
 GITEA
@@ -126,6 +127,7 @@ GranTeCan
 Guidera
 Guillaume
 Guillaume's
+heatmap
 highlightjs
 hoc
 Hoc
@@ -282,6 +284,7 @@ serverless
 Serverless
 sha
 SHAP
+spain
 src
 sso
 stegano
@@ -318,6 +321,7 @@ unopinionated
 url
 USD
 userX
+vclock
 vectordb
 VectorDB
 venv
@@ -341,4 +345,3 @@ YOLO
 yolov
 YOLOv
 YOLOV
-vclock
