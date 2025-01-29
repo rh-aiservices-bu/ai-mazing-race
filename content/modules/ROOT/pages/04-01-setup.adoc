@@ -19,7 +19,7 @@ And of course, IT is on strike, so the French government needs your services, an
 They need your help. As a seasoned OpenShift AI user, you are their only hope...
 
 == Mission
-==== _**Difficuly Level:** Final Boss_
+=== _**Difficulty Level:** Final Boss_
 // * The French government has received a picture from one of its spies, as well as a tiny piece of code.
 // * They are sure the picture contains a hidden message.
 // * However, there is a strike at the Ministry of Defense. So no one had access to the servers ro run this code and decrypt the message hidden in the picture!

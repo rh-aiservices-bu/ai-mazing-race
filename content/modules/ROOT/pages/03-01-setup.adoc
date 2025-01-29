@@ -14,7 +14,7 @@ include::_attributes.adoc[]
 * Good progress had been made, but it was on an data science intern's laptop, and sadly, a spilled Sangria was no match for the laptop.
 
 == Mission
-==== _**Difficuly Level:** Warming Up_
+=== _**Difficulty Level:** Warming Up_
 
 * The current challenges are as follows:
 ** Some older version of the code were found on an old USB drive, but we know it's definitely not the most recent version we had gotten to.
@@ -28,6 +28,6 @@ Your specific tasks (in no particular order) are as follows:
 
 * Confirm that precision and accuracy levels reach 98% or higher
 
-* Implement an automated solution for the notebook to run daily, at 02:00 AM exactly, on Spanish time (CET)
+* **STRETCH GOAL**: Implement an automated solution for the notebook to run daily, at 02:00 AM exactly, on Spanish time (CET)
 
 Once done, document your findings and share them with the ASSA team so that others following in your footsteps have an easier time

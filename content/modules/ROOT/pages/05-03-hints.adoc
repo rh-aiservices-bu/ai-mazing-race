@@ -1,5 +1,6 @@
 = Hints
 include::_attributes.adoc[]
+
 == Good Granite Questions
 [%collapsible]
 ====

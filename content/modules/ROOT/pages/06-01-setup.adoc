@@ -21,7 +21,7 @@ include::_attributes.adoc[]
 
 
 == Mission
-==== _**Difficuly Level:** Bring it On_
+=== _**Difficulty Level:** Bring it On_
 * As part of your instruction set, you will find information on how to deploy an image detection model on Red Hat OpenShift AI.
 * This model has already been trained, and we assume it to be of good quality. (Also, it's urgent, and that's all we have, so we can't be picky)
 * There are however concerns about performance aspect of this model...
