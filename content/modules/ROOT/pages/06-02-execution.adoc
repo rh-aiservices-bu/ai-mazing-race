@@ -4,6 +4,7 @@ include::_attributes.adoc[]
 Start by going to your Data Science project and make sure the `Mission workbench` have these settings:
 
 * Image: `PyTorch`
+* Version: `2024.1`
 * Size: `Standard`
 
 In the folder `lab-materials/06`, located link:https://github.com/rh-aiservices-bu/ai-mazing-race/tree/main/lab-materials/06[here^] in GitHub, you will find various pieces of code and artifacts. Open the various notebooks in sequence, and follow the instructions to reproduce the work done so far.
