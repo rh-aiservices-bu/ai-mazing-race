@@ -20,5 +20,3 @@ And so here, there is no choice, you will have to build a Custom Workbench Image
 == Task 3 - Setting everything up
 
 Prepare your project to allow the government to decrypt the message. Just remember you are only a user in this environment, not an admin. So this may complicate things a bit...
-
-Click to open the link:https://vclock.com/set-timer-for-15-minutes/[15-minute timer^]

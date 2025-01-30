@@ -30,4 +30,4 @@ One very easy way to do this is to click this fast-forward button:
 [.bordershadow]
 image::07/run-all-button.png[]
 
-Click to open the link:https://vclock.com/set-timer-for-15-minutes/[15-minute timer^]
+
