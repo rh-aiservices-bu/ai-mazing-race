@@ -25,9 +25,16 @@ Make sure that you keep clear notes, in plain text or in Markdown, ready to subm
 
 Each scenario is assigned a difficulty level, indicating that some may take more time than others. Be sure to manage your time wisely:
 
-- **Warming Up (Level 1)** – Quick and easy start  
-- **Bring it On (Level 2)** – Takes more time to solve  
-- **Final Boss (Level 3)** – A race against the clock
+[cols="15%,85%"]
+|===
+| **Scenario** | **Difficulty Level**
+| Spain  | **Warming Up (Level 1)** – A fun and approachable challenge to get started.  
+| Turkey | **Warming Up (Level 1)** – A gentle introduction—no pressure, just learning!  
+| Canada | **Bring it On (Level 2)** – Not too easy, not too hard—just the right balance to keep things interesting!
+| France | **Final Boss (Level 3)** –  A real challenge, but don’t worry! Figuring it out is part of the fun!  
+| Sweden | **Final Boss (Level 3)** – A tricky one! It might take a few tries, but every attempt teaches you something new. 
+|===
+
 
 == Working environment
 
