@@ -54,7 +54,7 @@ Mean Absolute Error (MAE): 6949.654246425216
 [.bordershadow]
 image::05/model-registry.gif[]
 
-_Alternatively, you can use the Python library of Model Registry if you prefer to store them if you want 😉_
+_Alternatively, you can use the Python library of Model Registry if you prefer 😉_
 
 After you register three different version of the same model, you can deploy the best performing one.
 
