@@ -399,8 +399,8 @@ spec:
                         cpu: '2'
                         memory: 4Gi
                       requests:
-                        cpu: '2'
-                        memory: 4Gi
+                        cpu: 500m
+                        memory: 500Mi
                     readinessProbe:
                       failureThreshold: 3
                       httpGet:
@@ -594,8 +594,8 @@ spec:
                         cpu: '2'
                         memory: 4Gi
                       requests:
-                        cpu: '2'
-                        memory: 4Gi
+                        cpu: 500m
+                        memory: 500Mi
                     readinessProbe:
                       failureThreshold: 3
                       httpGet:
