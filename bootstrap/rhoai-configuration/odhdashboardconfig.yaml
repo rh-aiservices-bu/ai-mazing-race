@@ -64,11 +64,11 @@ spec:
     - name: Small
       resources:
         requests:
-          cpu: '2'
-          memory: 4Gi
-        limits:
           cpu: 500m
           memory: 500Mi
+        limits:
+          cpu: '2'
+          memory: 4Gi
     - name: Standard
       resources:
         limits:
